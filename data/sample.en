@@ -1,0 +1,2074 @@
+# this file has the samples for testing
+# some notes on nomenclature
+# "::: xyz" = start of a new sample with name xyz
+# "%"       = different prompts for each task
+# "-"       = an example input for the test
+# "<>"      = output of the question, expected of the model to generate
+# 
+# all tests have many samples that will have to be tested with shuffling
+# and sampling of the data
+
+::: Words
+# this has a big list of words and some questions of what can be done with those
+# user will have to write code for this
+% What is the {n}th letter in each word?
+
+# eg: What words have the letter combination 'con' in it?
+# contact <> true
+# product <> false
+# welcome <> true
+# through <> false
+
+% What words have the letter combination '{}' in it?
+- information
+- contact
+- business
+- services
+- service
+- products
+- product
+- available
+- copyright
+- support
+- message
+- software
+- through
+- privacy
+- company
+- general
+- research
+- university
+- january
+- reviews
+- program
+- management
+- international
+- comments
+- development
+- details
+- because
+- results
+- education
+- national
+- internet
+- address
+- community
+- shipping
+- reserved
+- subject
+- between
+- special
+- website
+- technology
+- project
+- version
+- section
+- related
+- security
+- american
+- members
+- network
+- computer
+- systems
+- following
+- download
+- without
+- resources
+- current
+- control
+- history
+- pictures
+- personal
+- including
+- directory
+- location
+- government
+- children
+- students
+- shopping
+- account
+- digital
+- profile
+- previous
+- department
+- description
+- insurance
+- another
+- property
+- quality
+- listing
+- content
+- country
+- private
+- customer
+- december
+- compare
+- include
+- college
+- article
+- provide
+- different
+- process
+- training
+- science
+- categories
+- advanced
+- english
+- conditions
+- windows
+- category
+- gallery
+- register
+- however
+- october
+- november
+- library
+- features
+- industry
+- provided
+- required
+- accessories
+- september
+- questions
+- medical
+- application
+- articles
+- feedback
+- looking
+- complete
+- comment
+- financial
+- working
+- against
+- standard
+- payment
+- equipment
+- student
+- programs
+- problem
+- performance
+- language
+- options
+- experience
+- america
+- important
+- activities
+- example
+- additional
+- password
+- something
+- question
+- changes
+- building
+- february
+- release
+- analysis
+- request
+- picture
+- possible
+- professional
+- committee
+- problems
+- washington
+- meeting
+- interest
+- california
+- similar
+- schools
+- million
+- reference
+- companies
+- learning
+- delivery
+- popular
+- stories
+- computers
+- journal
+- reports
+- welcome
+- central
+- president
+- original
+- council
+- includes
+- australia
+- discussion
+- archive
+- entertainment
+- agreement
+- society
+- friends
+- edition
+- messages
+- marketing
+- further
+- updated
+- association
+- provides
+- already
+- studies
+- specific
+- several
+- collection
+- display
+- limited
+- powered
+- solutions
+- director
+- natural
+- whether
+- electronics
+- planning
+- database
+- official
+- weather
+- average
+- technical
+- microsoft
+- conference
+- environment
+- records
+- district
+- calendar
+- statement
+- downloads
+- resource
+- present
+- applications
+- document
+- material
+- written
+- federal
+- hosting
+- tickets
+- requirements
+- finance
+- minutes
+- reading
+- individual
+- usually
+- together
+- percent
+- function
+- getting
+- economic
+- projects
+- subscribe
+- germany
+- included
+- everything
+
+::: Arxiv Classification Multiple
+% Extract the category of each research paper:
+% Classify the research papers into topics
+% What are the topics discussed in each paper
+% Under what category does each paper stand
+% Put each paper into buckets of classes
+- The Quasar Feedback Survey: Discovering hidden Radio-AGN and their connection to the host galaxy ionised gas <> Astrophysics of Galaxies, High Energy Astrophysical Phenomena
+- An astronomical image content-based recommendation system using combined deep learning models in a fully unsupervised mode <> Instrumentation and Methods for Astrophysics
+- Emission Mechanisms of Fast Radio Bursts <> High Energy Astrophysical Phenomena
+- Revisiting the analysis of HW Vir eclipse timing data I. A frequentist data modeling approach and a dynamical stability analysis <> Solar and Stellar Astrophysics, Earth and Planetary Astrophysics
+- Determination of Planetary Nebulae angular diameters from radio continuum Spectral Energy Distribution modeling <> Astrophysics of Galaxies, Instrumentation and Methods for Astrophysics, Solar and Stellar Astrophysics
+- Gravitational Wave Direct Detection does not Constrain the Tensor Spectral Index at CMB Scales <> Cosmology and Nongalactic Astrophysics, General Relativity and Quantum Cosmology
+- Reheating constraints on K-inflation <> Cosmology and Nongalactic Astrophysics, General Relativity and Quantum Cosmology, High Energy Physics - Phenomenology, High Energy Physics - Theory
+- Population III star explosions and Planck 2018 data <> Cosmology and Nongalactic Astrophysics
+- The environment of QSO triplets at 1 \lesssim z \lesssim 1.5 <> Cosmology and Nongalactic Astrophysics, Astrophysics of Galaxies
+- X-Ray Shapes of Elliptical Galaxies and Implications for Self-Interacting Dark Matter <> Cosmology and Nongalactic Astrophysics, Astrophysics of Galaxies, High Energy Astrophysical Phenomena, High Energy Physics - Phenomenology
+- Depths of Copernican craters on lunar maria and highlands <> Earth and Planetary Astrophysics
+- Origin of the Moon <> Earth and Planetary Astrophysics, Geophysics, Space Physics
+- An ultra-short-period transiting super-Earth orbiting the M3 dwarf TOI-1685 <> Earth and Planetary Astrophysics
+- A Noachian proglacial paleolake on Mars: Fluvial activity and lake formation within a closed-source drainage basin crater and implications for early Mars climate <> Earth and Planetary Astrophysics, Geophysics
+- The Impact of Stellar Clustering on the Observed Multiplicity and Orbital Periods of Planetary Systems <> Earth and Planetary Astrophysics, Astrophysics of Galaxies, Solar and Stellar Astrophysics
+- Analysis of galaxy kinematics based on Cepheids from the Gaia DR2 Catalogue <> Astrophysics of Galaxies
+- Efficient exploration and calibration of a semi-analytical model of galaxy formation with deep learning <> Astrophysics of Galaxies
+- [CII] emission properties of the massive star-forming region RCW36 in a filamentary molecular cloud <> Astrophysics of Galaxies
+- The tidal evolution of dark matter substructure -- II. The impact of artificial disruption on subhalo mass functions and radial profiles <> Astrophysics of Galaxies, Cosmology and Nongalactic Astrophysics
+- Lyman continuum leakage from low-mass galaxies with Mstar < 1.E8 Msun <> Astrophysics of Galaxies
+- Superfluid stars and Q-balls in curved spacetime <> High Energy Astrophysical Phenomena, General Relativity and Quantum Cosmology, High Energy Physics - Phenomenology
+- Numerical Inside View of Hypermassive Remnant Models for GW170817 <> High Energy Astrophysical Phenomena, General Relativity and Quantum Cosmology
+- Revealing a New Black Widow Binary 4FGL J0336.0+7502 <> High Energy Astrophysical Phenomena
+- Generating neutron-star magnetic fields: three phases of dynamo action <> High Energy Astrophysical Phenomena, Solar and Stellar Astrophysics
+- A ring accelerator? Unusual jet dynamics in the IceCube candidate PKS 1502+106 <> High Energy Astrophysical Phenomena, Cosmology and Nongalactic Astrophysics, Astrophysics of Galaxies
+- A Method for Pulsar Searching: Combining a Two-dimensional Autocorrelation Profile Map and a Deep Convolutional Neural Network <> Instrumentation and Methods for Astrophysics
+- Nonlinearity and wideband parametric amplification in an NbTiN microstrip transmission line <> Instrumentation and Methods for Astrophysics, Instrumentation and Detectors
+- The star catalogue of Wilhelm IV, Landgraf von Hessen-Kassel: Accuracy of the catalogue and of the measurements <> Instrumentation and Methods for Astrophysics
+- Geospatial Transformations for Ground-Based Sky Imaging Systems <> Instrumentation and Methods for Astrophysics, Image and Video Processing
+- A novel stellar spectrum denoising method based on deep Bayesian modeling <> Instrumentation and Methods for Astrophysics
+- A survey of IRAS young stellar object candidates. Searching for large-scale Herbig-Haro objects <> Solar and Stellar Astrophysics, Astrophysics of Galaxies
+- High-sensitivity radio study of the non-thermal stellar bow shock EB27 <> Solar and Stellar Astrophysics, Astrophysics of Galaxies, High Energy Astrophysical Phenomena
+- Actinide crystallization and fission reactions in cooling white dwarf stars <> Solar and Stellar Astrophysics, High Energy Astrophysical Phenomena, Nuclear Theory
+- Projected Rotational Velocities and Fundamental Properties of Low-Mass Pre-Main Sequence Stars in the Taurus-Auriga Star Forming Region <> Solar and Stellar Astrophysics
+- Intriguing detection of ^{12}CO molecular emission in a classical Be star <> Solar and Stellar Astrophysics
+- Chimera Time-Crystalline order in quantum spin networks <> Quantum Physics, Disordered Systems and Neural Networks, Quantum Gases, Statistical Mechanics, Chaotic Dynamics
+- Scattering Problems via Real-time Wave Packet Scattering <> Physics Education, Disordered Systems and Neural Networks, Quantum Physics
+- Symmetry Violation of Quantum Multifractality: Gaussian fluctuations versus Algebraic Localization <> Disordered Systems and Neural Networks, Quantum Physics
+- Engineering insulator-metal transition in a class of decorated aperiodic lattices: a quantum dynamical study <> Disordered Systems and Neural Networks
+- Scalable Hamiltonian learning for large-scale out-of-equilibrium quantum dynamics <> Quantum Physics, Disordered Systems and Neural Networks, Quantum Gases
+- Riemannian Geometry of Resonant Optical Responses <> Mesoscale and Nanoscale Physics, Optics
+- Gapless Spin Wave Transport through a Quantum Canted-Antiferromagnet <> Mesoscale and Nanoscale Physics
+- From nanotubes to nanoholes: scaling of selectivity in uniformly charged nanopores through the Dukhin number for 1:1 electrolytes <> Mesoscale and Nanoscale Physics, Statistical Mechanics, Chemical Physics, Computational Physics
+- Geometric effects on a quantum particle constrained to a helix, catenary, helicoid, or catenoid <> Mesoscale and Nanoscale Physics
+- Non-specular reflection by a planar resonant metasurface <> Mesoscale and Nanoscale Physics, Optics
+- Spin and charge interconversion in Dirac semimetal thin films <> Materials Science, Mesoscale and Nanoscale Physics
+- Ion-Beam Modification of Metastable Gallium Oxide Polymorphs <> Materials Science, Applied Physics
+- Active learning based generative design for the discovery of wide bandgap materials <> Materials Science, Machine Learning
+- Phonon Hall effect with first-principles calculations <> Materials Science, Mesoscale and Nanoscale Physics
+- Accommodation mechanisms in strain-transformable titanium alloys <> Materials Science
+- Why Asymmetric Molecular Coupling to Electrodes Cannot Be at Work in Real Molecular Rectifiers <> Mesoscale and Nanoscale Physics, Materials Science, Other Condensed Matter, Chemical Physics
+- Critical behavior of the 2d scalar theory: resumming the {\rm N}^8{\rm LO} perturbative mass gap <> High Energy Physics - Theory, Other Condensed Matter, High Energy Physics - Phenomenology
+- Review of approximations for the exchange-correlation energy in density-functional theory <> Chemical Physics, Other Condensed Matter, Computational Physics
+- Homonuclear J-Coupling Spectroscopy at Low Magnetic Fields using Spin-Lock Induced Crossing <> Chemical Physics, Other Condensed Matter, Quantum Physics
+- Mixed-valence compounds as polarizing agents for Overhauser dynamic nuclear polarization in solids <> Other Condensed Matter
+- Long distance optical transport of ultracold atoms: A compact setup using a Moiré lens <> Quantum Gases, Atomic Physics
+- Dynamics of strongly interacting Fermi gases with time-dependent interactions: Consequence of conformal symmetry <> Quantum Gases
+- Open Quantum-System Simulation of Faraday's Induction Law via Dynamical Instabilities <> Quantum Gases, Quantum Physics
+- Pauli blocking of atomic spontaneous decay <> Quantum Physics, Quantum Gases, Atomic Physics
+- The Topological Origin of the Peierls-Nabarro Barrier <> Soft Condensed Matter, Materials Science, Mathematical Physics
+- On the emergence of orientational order in folded proteins with implications for allostery <> Soft Condensed Matter, Biomolecules
+- Instability-induced patterning of a jelling jet <> Soft Condensed Matter, Materials Science, Applied Physics
+- Fast Evaporation Enabled Ultrathin Polymeric Coatings on Nanoporous Substrates for Highly Permeable Membranes <> Soft Condensed Matter, Materials Science
+- Hyperuniformity and phase enrichment in vortex and rotor assemblies <> Soft Condensed Matter, Materials Science, Fluid Dynamics
+- Conformational statistics of non-equilibrium polymer loops in Rouse model with active loop extrusion <> Statistical Mechanics
+- Critical properties of the frustrated Ising model on a honeycomb lattice: A Monte Carlo study <> Statistical Mechanics
+- Coherent and dissipative dynamics at quantum phase transitions <> Statistical Mechanics, Quantum Physics
+- Intrinsic dimension of path integrals: data mining quantum criticality and emergent simplicity <> Statistical Mechanics, Disordered Systems and Neural Networks, Computational Physics, Data Analysis, Statistics and Probability
+- A Theory of Localized Excitations in Glass Formers <> Statistical Mechanics, Materials Science, Soft Condensed Matter
+- Topological Dipole Conserving Insulators and Multipolar Responses <> Strongly Correlated Electrons, High Energy Physics - Theory
+- Multi-fluid hydrodynamics in charge density waves with collective, electronic, and solitonic densities and currents <> Strongly Correlated Electrons
+- Luttinger sum rules and spin fractionalization in the SU(N) Kondo Lattice <> Strongly Correlated Electrons, Superconductivity
+- Field-tunable toroidal moment in a chiral-lattice magnet <> Strongly Correlated Electrons, Materials Science
+- Anomalous fractional quantization in the Kagome-like Heisenberg ladder: Emergence of the effective spin-1 chain <> Strongly Correlated Electrons
+- Unconventional topological transitions in a self-organized magnetic ladder <> Superconductivity, Mesoscale and Nanoscale Physics
+- Higher-order topological superconductors based on weak topological insulators <> Superconductivity, Mesoscale and Nanoscale Physics, Materials Science
+- Increase of YBa2Cu3O7 critical currents by Mo substitution and high pressure oxygen annealing <> Superconductivity
+- High sensitivity heat capacity measurements on Sr2RuO4 under uniaxial pressure <> Superconductivity, Strongly Correlated Electrons
+- High-T_c ternary metal hydrides, YKH_{12} and LaKH_{12}, discovered by machine learning <> Superconductivity, Computational Physics, Data Analysis, Statistics and Probability
+- Lifelong Learning based Disease Diagnosis on Clinical Notes <> Artificial Intelligence
+- Differentiable Inductive Logic Programming for Structured Examples <> Artificial Intelligence, Machine Learning
+- Scaling up Mean Field Games with Online Mirror Descent <> Artificial Intelligence
+- Multi-agent Reinforcement Learning in OpenSpiel: A Reproduction Report <> Artificial Intelligence
+- Physarum Polycephalum Intelligent Foraging Behaviour and Applications -- Short Review <> Artificial Intelligence
+- SparkXD: A Framework for Resilient and Energy-Efficient Spiking Neural Network Inference using Approximate DRAM <> Hardware Architecture, Neural and Evolutionary Computing
+- Mind Mappings: Enabling Efficient Algorithm-Accelerator Mapping Space Search <> Machine Learning, Hardware Architecture
+- HIR: An MLIR-based Intermediate Representation for Hardware Accelerator Description <> Hardware Architecture, Programming Languages
+- Run-time Performance Monitoring of Heterogenous Hw/Sw Platforms Using PAPI <> Hardware Architecture
+- Hardware Acceleration of Fully Quantized BERT for Efficient Natural Language Processing <> Hardware Architecture, Computation and Language
+- Consensus in Blockchain Systems with Low Network Throughput: A Systematic Mapping Study <> Performance, Computational Complexity, Distributed, Parallel, and Cluster Computing
+- Incidence geometry in the projective plane via almost-principal minors of symmetric matrices <> Statistics Theory, Computational Complexity
+- On the Complexity of Equilibrium Computation in First-Price Auctions <> Computer Science and Game Theory, Computational Complexity
+- How do exponential size solutions arise in semidefinite programming? <> Optimization and Control, Computational Complexity
+- Separating ABPs and Some Structured Formulas in the Non-Commutative Setting <> Computational Complexity
+- Time Matters: Exploring the Effects of Urgency and Reaction Speed in Automated Traders <> Multiagent Systems, Computational Engineering, Finance, and Science, Computational Finance, Trading and Market Microstructure
+- Task-parallel in-situ temporal compression of large-scale computational fluid dynamics data <> Computational Engineering, Finance, and Science
+- Projection-tree reduced order modeling for fast N-body computations <> Computational Engineering, Finance, and Science
+- Pandemic Drugs at Pandemic Speed: Accelerating COVID-19 Drug Discovery with Hybrid Machine Learning- and Physics-based Simulations on High Performance Computers <> Distributed, Parallel, and Cluster Computing, Computational Engineering, Finance, and Science, Machine Learning, Biological Physics, Quantitative Methods
+- IH-GAN: A Conditional Generative Model for Implicit Surface-Based Inverse Design of Cellular Structures <> Computational Engineering, Finance, and Science, Machine Learning, Machine Learning
+- Is Simple Uniform Sampling Efficient for Center-Based Clustering With Outliers: When and Why? <> Machine Learning, Computational Geometry, Databases
+- Fast Exact Booleans for Iterated CSG using Octree-Embedded BSPs <> Computational Geometry, Graphics
+- An Optimal Deterministic Algorithm for Geodesic Farthest-Point Voronoi Diagrams in Simple Polygons <> Computational Geometry, Data Structures and Algorithms
+- Quad layouts with high valence singularities for flexible quad meshing <> Numerical Analysis, Computational Geometry
+- On Optimal w-gons in Convex Polygons <> Computational Geometry
+- M6: A Chinese Multimodal Pretrainer <> Computation and Language
+- Towards Conversational Humor Analysis and Design <> Computation and Language, Human-Computer Interaction, Machine Learning
+- EDS-MEMBED: Multi-sense embeddings based on enhanced distributional semantic structures via a graph walk over word senses <> Computation and Language, Machine Learning
+- Long Document Summarization in a Low Resource Setting using Pretrained Language Models <> Computation and Language
+- BERT-based Acronym Disambiguation with Multiple Training Strategies <> Computation and Language
+- New Public-Key Crypto-System EHT <> Cryptography and Security
+- Recovering or Testing Extended-Affine Equivalence <> Cryptography and Security, Discrete Mathematics, Information Theory
+- Virus-MNIST: A Benchmark Malware Dataset <> Cryptography and Security, Machine Learning
+- Cybersecurity Awareness <> Cryptography and Security, Computers and Society, Human-Computer Interaction, Networking and Internet Architecture
+- Asymmetric Differential Privacy <> Cryptography and Security
+- Efficient Transformer based Method for Remote Sensing Image Change Detection <> Computer Vision and Pattern Recognition
+- Online Behavioral Analysis with Application to Emotion State Identification <> Computer Vision and Pattern Recognition, Machine Learning
+- Learning for Visual Navigation by Imagining the Success <> Computer Vision and Pattern Recognition
+- Walk2Map: Extracting Floor Plans from Indoor Walk Trajectories <> Computer Vision and Pattern Recognition, Artificial Intelligence, Graphics, Machine Learning
+- PRISM: A Unified Framework of Parameterized Submodular Information Measures for Targeted Data Subset Selection and Summarization <> Computer Vision and Pattern Recognition
+- Reflections on the Clinical Acceptance of Artificial Intelligence <> Computers and Society
+- Air taxi service for urban mobility: A critical review of recent developments, future challenges, and opportunities <> Computers and Society, Optimization and Control
+- Convergence and Inequality in Research Globalization <> Computers and Society, Digital Libraries
+- An Analysis of Distributed Systems Syllabi With a Focus on Performance-Related Topics <> Computers and Society, Distributed, Parallel, and Cluster Computing
+- The Rise of a New Digital Third Space Professional in Higher Education: Recognising Research Software Engineering <> Computers and Society
+- On Optimizing the Trade-off between Privacy and Utility in Data Provenance <> Databases
+- GAPS: Geo Data Portals for Air Pollution Studies <> Databases, Digital Libraries
+- K-FACE: A Large-Scale KIST Face Database in Consideration with Unconstrained Environments <> Computer Vision and Pattern Recognition, Databases
+- Serverless Model Serving for Data Science <> Distributed, Parallel, and Cluster Computing, Artificial Intelligence, Databases, Machine Learning
+- Ribbon filter: practically smaller than Bloom and Xor <> Data Structures and Algorithms, Databases
+- Accelerating Distributed-Memory Autotuning via Statistical Analysis of Execution Paths <> Distributed, Parallel, and Cluster Computing
+- VELOC: VEry Low Overhead Checkpointing in the Age of Exascale <> Distributed, Parallel, and Cluster Computing
+- Capelin: Data-Driven Capacity Procurement for Cloud Datacenters using Portfolios of Scenarios -- Extended Technical Report <> Distributed, Parallel, and Cluster Computing
+- Parallel Machine Learning of Partial Differential Equations <> Distributed, Parallel, and Cluster Computing
+- Scalable communication for high-order stencil computations using CUDA-aware MPI <> Distributed, Parallel, and Cluster Computing, Computational Physics, Fluid Dynamics
+- Enhancing the role of academic librarians in conducting scoping reviews <> Digital Libraries
+- OMERO.mde in a use case for microscopy metadata harmonization: Facilitating FAIR principles in practical application with metadata annotation tools <> Quantitative Methods, Digital Libraries
+- Nested Vehicle Routing Problem: Optimizing Drone-Truck Surveillance Operations <> Discrete Mathematics, Robotics, Systems and Control
+- Economic Dispatch of a Single Micro-Gas Turbine Under CHP Operation with Uncertain Demands <> Optimization and Control, Discrete Mathematics, Systems and Control
+- Preliminaries on the Accurate Estimation of the Hurst Exponent Using Time Series <> Signal Processing, Discrete Mathematics
+- The Maintenance Scheduling and Location Choice Problem for Railway Rolling Stock <> Optimization and Control, Discrete Mathematics
+- k-apices of minor-closed graph classes. I. Bounding the obstructions <> Combinatorics, Discrete Mathematics, Data Structures and Algorithms
+- Wide Network Learning with Differential Privacy <> Machine Learning, Data Structures and Algorithms
+- A Simple Algorithm for the Constrained Sequence Problems <> Data Structures and Algorithms
+- Improving EFX Guarantees through Rainbow Cycle Number <> Computer Science and Game Theory, Data Structures and Algorithms
+- On subgraph complementation to H-free graphs <> Data Structures and Algorithms
+- Experimental Body-input Three-stage DC offset Calibration Scheme for Memristive Crossbar <> Emerging Technologies, Signal Processing
+- PyQUBO: Python Library for Mapping Combinatorial Optimization Problems to QUBO Form <> Quantum Physics, Emerging Technologies
+- Implementation of binary stochastic STDP learning using chalcogenide-based memristive devices <> Emerging Technologies, Systems and Control
+- Image-based Approximate DNA Storage System <> Emerging Technologies
+- Reservoir Computing with Superconducting Electronics <> Superconductivity, Emerging Technologies, Neural and Evolutionary Computing, Applied Physics
+- Inferring Unobserved Events in Systems With Shared Resources and Queues <> Distributed, Parallel, and Cluster Computing, Artificial Intelligence, Formal Languages and Automata Theory, Performance
+- Directing Words of Fuzzy Finite Automata <> Formal Languages and Automata Theory
+- Unambiguously coded systems <> Dynamical Systems, Formal Languages and Automata Theory
+- DONeRF: Towards Real-Time Rendering of Neural Radiance Fields using Depth Oracle Networks <> Computer Vision and Pattern Recognition, Graphics
+- A Bounded Measure for Estimating the Benefit of Visualization: Case Studies and Empirical Evaluation <> Human-Computer Interaction, Graphics, Information Theory
+- Learning to Manipulate Amorphous Materials <> Graphics, Machine Learning
+- Mixture of Volumetric Primitives for Efficient Neural Rendering <> Graphics, Computer Vision and Pattern Recognition
+- Information Discrepancy in Strategic Learning <> Computer Science and Game Theory, Computers and Society, Machine Learning
+- Prior-free Dynamic Mechanism Design With Limited Liability <> Computer Science and Game Theory, Theoretical Economics
+- A Game-Theoretic Analysis of Cross-Ledger Swaps with Packetized Payments <> Computer Science and Game Theory, Multiagent Systems
+- Trust in Social Network Games <> Computer Science and Game Theory
+- Deep Colormap Extraction from Visualizations <> Human-Computer Interaction
+- The Personalization Paradox: the Conflict between Accurate User Models and Personalized Adaptive Systems <> Human-Computer Interaction
+- Music Genre Bars <> Human-Computer Interaction, Sound, Audio and Speech Processing
+- Gaze-contingent decoding of human navigation intention on an autonomous wheelchair platform <> Human-Computer Interaction, Machine Learning
+- Supporting a Crowd-powered Accessible Online Art Gallery for People with Visual Impairments: A Feasibility Study <> Human-Computer Interaction
+- TopicTracker: A Platform for Topic Trajectory Identification and Visualisation <> Artificial Intelligence, Information Retrieval
+- University of Copenhagen Participation in TREC Health Misinformation Track 2020 <> Information Retrieval
+- A Linguistic Study on Relevance Modeling in Information Retrieval <> Information Retrieval
+- Topic Modelling Meets Deep Neural Networks: A Survey <> Machine Learning, Computation and Language, Information Retrieval
+- High-Performance Training by Exploiting Hot-Embeddings in Recommendation Systems <> Information Retrieval, Artificial Intelligence, Hardware Architecture, Machine Learning
+- Adaptive Transmission Scheduling in Wireless Networks for Asynchronous Federated Learning <> Information Theory, Machine Learning
+- Secure UAV Random Networks With Minimum Safety Distance <> Information Theory
+- Millimeter Wave and sub-THz Indoor Radio Propagation Channel Measurements, Models, and Comparisons in an Office Environment <> Information Theory
+- Burst-Error Propagation Suppression for Decision-Feedback Equalizer in Field-Trial Submarine Fiber-Optic Communications <> Information Theory
+- UAV-Enabled Wireless Power Transfer: A Tutorial Overview <> Information Theory, Signal Processing
+- Anomaly Detection on Attributed Networks via Contrastive Self-Supervised Learning <> Machine Learning
+- Characterization of Neural Networks Automatically Mapped on Automotive-grade Microcontrollers <> Machine Learning, Neural and Evolutionary Computing, Programming Languages, Systems and Control
+- NEUROSPF: A tool for the Symbolic Analysis of Neural Networks <> Machine Learning, Artificial Intelligence, Software Engineering
+- Incorporating Causal Graphical Prior Knowledge into Predictive Modeling via Simple Data Augmentation <> Machine Learning, Machine Learning
+- Reducing Conservativeness Oriented Offline Reinforcement Learning <> Machine Learning
+- On Problems Dual to Unification: The String-Rewriting Case <> Logic in Computer Science
+- Focus-style proof systems and interpolation for the alternation-free μ-calculus <> Logic in Computer Science
+- Introduction to a Hypergraph Logic Unifying Different Variants of the Lambek Calculus <> Logic, Logic in Computer Science
+- Logic Embeddings for Complex Query Answering <> Artificial Intelligence, Databases, Machine Learning, Logic in Computer Science
+- Cost Optimal Planning as Satisfiability <> Artificial Intelligence, Logic in Computer Science
+- Continuous Coordination As a Realistic Scenario for Lifelong Learning <> Machine Learning, Artificial Intelligence, Multiagent Systems
+- FAtiMA Toolkit -- Toward an effective and accessible tool for the development of intelligent virtual agents and social robots <> Multiagent Systems, Human-Computer Interaction, Robotics
+- Inference-Based Deterministic Messaging For Multi-Agent Communication <> Multiagent Systems, Artificial Intelligence
+- Convolutional versus Self-Organized Operational Neural Networks for Real-World Blind Image Denoising <> Computer Vision and Pattern Recognition, Machine Learning, Multimedia, Networking and Internet Architecture
+- End-to-End Mispronunciation Detection and Diagnosis From Raw Waveforms <> Audio and Speech Processing, Multimedia, Sound
+- A Brief Survey on Deep Learning Based Data Hiding, Steganography and Watermarking <> Cryptography and Security, Machine Learning, Multimedia
+- A Brief Survey of Current Software Engineering Practices in Continuous Integration and Automated Accessibility Testing <> Software Engineering, Computers and Society, Human-Computer Interaction, Multimedia
+- Transform Network Architectures for Deep Learning based End-to-End Image/Video Coding in Subsampled Color Spaces <> Image and Video Processing, Artificial Intelligence, Computer Vision and Pattern Recognition, Machine Learning, Multimedia
+- A Difference-of-Convex Cutting Plane Algorithm for Mixed-Binary Linear Program <> Optimization and Control, Mathematical Software
+- An open-source framework for ExpFinder integrating N-gram Vector Space Model and μCO-HITS <> Information Retrieval, Mathematical Software, Software Engineering
+- TSSOS: a Julia library to exploit sparsity for large-scale polynomial optimization <> Optimization and Control, Mathematical Software
+- Machine Learning using Stata/Python <> Computation, Machine Learning, Mathematical Software
+- Computation of transmission eigenvalues by the regularized Schur complement for the boundary integral operators <> Numerical Analysis, Analysis of PDEs
+- Reduced basis method for the nonlinear Poisson-Boltzmann equation regularized by the range-separated canonical tensor format <> Numerical Analysis
+- Pyramid Transform of Manifold Data via Subdivision Operators <> Numerical Analysis
+- Mixed variational formulations for structural topology optimization based on the phase-field approach <> Numerical Analysis, Optimization and Control
+- A recursive system-free single-step temporal discretization method for finite difference methods <> Numerical Analysis, High Energy Astrophysical Phenomena, Computational Physics
+- A survey on Variational Autoencoders from a GreenAI perspective <> Machine Learning, Neural and Evolutionary Computing
+- Graph-Time Convolutional Neural Networks <> Machine Learning, Artificial Intelligence, Neural and Evolutionary Computing, Signal Processing
+- Surrogate-assisted cooperative signal optimization for large-scale traffic networks <> Neural and Evolutionary Computing
+- Individual risk profiling for portable devices using a neural network to process the recording of 30 successive pairs of cognitive reaction and emotional response to a multivariate situational risk assessment <> Neural and Evolutionary Computing
+- Reconstructed spatial receptive field structures by reverse correlation technique explains the visual feature selectivity of units in deep convolutional neural networks <> Networking and Internet Architecture
+- 5G New Radio for Public Safety Mission Critical Communications <> Networking and Internet Architecture
+- Synthesizing Safe and Efficient Kernel Extensions for Packet Processing <> Networking and Internet Architecture
+- Towards Intelligent RAN Slicing for B5G: Opportunities and Challenges <> Networking and Internet Architecture, Machine Learning
+- Technical Report for A Joint User Scheduling and Trajectory Planning Data Collection Strategy for the UAV-assisted WSN <> Networking and Internet Architecture
+- Analytic Modeling of Idle Waves in Parallel Programs: Communication, Cluster Topology, and Noise Impact <> Distributed, Parallel, and Cluster Computing, Performance
+- Modified Erlang loss system for cognitive wireless networks <> Performance, Probability
+- Parallel In-Place Algorithms: Theory and Practice <> Distributed, Parallel, and Cluster Computing, Data Structures and Algorithms, Performance
+- Dynamic Verification of C/C++11 Concurrency over Multi Copy Atomics <> Programming Languages
+- An Axiomatic Approach to Detect Information Leaks in Concurrent Programs <> Programming Languages, Cryptography and Security
+- Finding Bugs with Specification-Based Testing is Easy! <> Programming Languages
+- Extending Prolog for Quantified Boolean Horn Formulas <> Logic in Computer Science, Data Structures and Algorithms, Programming Languages
+- Learning Proposals for Probabilistic Programs with Inference Combinators <> Machine Learning, Machine Learning, Programming Languages
+- Sim-to-Real Transfer for Robotic Manipulation with Tactile Sensory <> Robotics
+- CrossMap Transformer: A Crossmodal Masked Path Transformer Using Double Back-Translation for Vision-and-Language Navigation <> Robotics, Computer Vision and Pattern Recognition
+- Geometrically Constrained Trajectory Optimization for Multicopters <> Robotics
+- Object affordance as a guide for grasp-type recognition <> Robotics, Computer Vision and Pattern Recognition, Human-Computer Interaction
+- Trajectory Servoing: Image-Based Trajectory Tracking Using SLAM <> Robotics
+- Frobenius Groups with Perfect Order Classes <> Group Theory, Symbolic Computation, Number Theory
+- Bayesian filtering for nonlinear stochastic systems using holonomic gradient method with integral transform <> Numerical Analysis, Symbolic Computation, Signal Processing, Systems and Control
+- Provability in BI's Sequent Calculus is Decidable <> Logic in Computer Science, Symbolic Computation, Logic
+- Affine equivalences of rational surfaces of translation, and applications to rational minimal surfaces <> Algebraic Geometry, Computational Geometry, Symbolic Computation
+- Inductive biases, pretraining and fine-tuning jointly account for brain responses to speech <> Computation and Language, Sound, Audio and Speech Processing, Neurons and Cognition
+- Expert decision support system for aeroacoustic classification <> Sound, Artificial Intelligence, Machine Learning, Audio and Speech Processing
+- Audio scene monitoring using redundant un-localized microphone arrays <> Sound, Machine Learning, Audio and Speech Processing
+- Error-driven Fixed-Budget ASR Personalization for Accented Speakers <> Sound, Computation and Language, Audio and Speech Processing
+- Compute and memory efficient universal sound source separation <> Sound, Computation and Language, Machine Learning, Audio and Speech Processing
+- Rethinking complexity for software code structures: A pioneering study on Linux kernel code repository <> Software Engineering
+- Understanding Emotions of Developer Community Towards Software Documentation <> Software Engineering
+- CURE: Code-Aware Neural Machine Translation for Automatic Program Repair <> Software Engineering, Artificial Intelligence, Machine Learning
+- The Secret Life of Hackathon Code <> Software Engineering
+- Seamless Variability Management With the Virtual Platform <> Software Engineering
+- Understanding & Predicting User Lifetime with Machine Learning in an Anonymous Location-Based Social Network <> Social and Information Networks, Machine Learning
+- A simple method for improving the accuracy of Chung-Lu random graph generation <> Social and Information Networks
+- COVID-19: Detecting Depression Signals during Stay-At-Home Period <> Social and Information Networks
+- TweetCOVID: A System for Analyzing Public Sentiments and Discussions about COVID-19 via Twitter Activities <> Social and Information Networks, Computers and Society, Information Retrieval
+- Criminal Networks Analysis in Missing Data scenarios through Graph Distances <> Social and Information Networks, Computers and Society
+- Infrastructure Assisted Constrained Connected Automated Vehicle Trajectory Optimization on Curved Roads: A Spatial Formulation on a Curvilinear Coordinate <> Systems and Control
+- Sparse Sensing Architectures with Optimal Precision for Tracking Multi-agent Systems in Sensing-denied Environments <> Systems and Control
+- On performance bound estimation in NMPC with time-varying terminal cost <> Systems and Control, Optimization and Control
+- Statistics for Building Synthetic Power System Cyber Models <> Systems and Control
+- Sensor Selection and Optimal Precision in \mathcal{H}_2/\mathcal{H}_{\infty} Estimation Framework: Theory and Algorithms <> Systems and Control, Optimization and Control
+- Theory of Low Frequency Contamination from Nonstationarity and Misspecification: Consequences for HAR Inference <> Econometrics
+- Extracting Complements and Substitutes from Sales Data: A Network Perspective <> Social and Information Networks, Econometrics, Physics and Society
+- Structural models for policy-making: Coping with parametric uncertainty <> Econometrics
+- High-dimensional estimation of quadratic variation based on penalized realized variance <> Econometrics, Methodology
+- The Kernel Trick for Nonlinear Factor Modeling <> Econometrics
+- Contrastive Separative Coding for Self-supervised Representation Learning <> Audio and Speech Processing, Artificial Intelligence, Machine Learning, Sound, Signal Processing
+- Long-Running Speech Recognizer:An End-to-End Multi-Task Learning Framework for Online ASR and VAD <> Audio and Speech Processing, Computation and Language, Sound
+- The effect of speech and noise levels on the quality perceived by cochlear implant and normal hearing listeners <> Audio and Speech Processing, Sound, Signal Processing
+- Open community platform for hearing aid algorithm research: open Master Hearing Aid (openMHA) <> Audio and Speech Processing, Sound, Signal Processing
+- Exploiting ultrasound tongue imaging for the automatic detection of speech articulation errors <> Audio and Speech Processing, Computation and Language, Sound, Neurons and Cognition
+- Real-World Single Image Super-Resolution: A Brief Review <> Image and Video Processing, Computer Vision and Pattern Recognition
+- Towards Unbiased COVID-19 Lesion Localisation and Segmentation via Weakly Supervised Learning <> Image and Video Processing, Computer Vision and Pattern Recognition
+- PA-ResSeg: A Phase Attention Residual Network for Liver Tumor Segmentation from Multi-phase CT Images <> Image and Video Processing, Computer Vision and Pattern Recognition
+- Wind Flow Estimation in Thermal Sky Images for Sun Occlusion Prediction <> Image and Video Processing
+- A matrix-free Levenberg-Marquardt algorithm for efficient ptychographic phase retrieval <> Image and Video Processing, Signal Processing, Optics
+- Uniquely Decomposable Constellation Group for SCMA Codebook Design <> Signal Processing
+- Coordinated Cyber-Attack Detection Model of Cyber-Physical Power System Based on the Operating State Data Link <> Signal Processing, Systems and Control
+- SmartON: Just-in-Time Active Event Detection on Energy Harvesting Systems <> Signal Processing, Machine Learning, Systems and Control
+- Research on the Power Transport Theorem Based Decoupling Mode Theory for Transceiving Systems <> Signal Processing, Classical Physics
+- Deep Reinforcement Learning for URLLC data management on top of scheduled eMBB traffic <> Signal Processing, Machine Learning
+- Quantum potentiality in Inhomogeneous Cosmology <> General Relativity and Quantum Cosmology, High Energy Physics - Theory
+- Late-time evolution of the Universe within a two-scalar-field cosmological model <> General Relativity and Quantum Cosmology
+- Scalarization of slowly rotating black holes <> General Relativity and Quantum Cosmology, High Energy Physics - Theory
+- On the nature of exotic matter in Morris-Thorne wormholes <> General Relativity and Quantum Cosmology
+- Gravitational Lensing in 4-D Einstein-Gauss-Bonnet gravity in the presence of plasma <> General Relativity and Quantum Cosmology
+- Measurements of differential cross-sections in four-lepton events in 13 TeV proton-proton collisions with the ATLAS detector <> High Energy Physics - Experiment
+- First observation of new isomers in ^{228}Ac : Impact on dark matter searches <> High Energy Physics - Experiment, Nuclear Experiment
+- Observation of e^{+}e^{-}\rightarrowηψ(2S) at center-of-mass energies from 4.236 to 4.600 GeV <> High Energy Physics - Experiment
+- Top mass shift resulting from the recalibration of flavor-dependent jet energy corrections in the DØ lepton+jets top mass measurement <> High Energy Physics - Experiment
+- Software Training in HEP <> High Energy Physics - Experiment, Physics Education
+- Matter-driven phase transition in lattice quantum gravity <> High Energy Physics - Theory, General Relativity and Quantum Cosmology, High Energy Physics - Lattice
+- Real-time lattice gauge theory actions: unitarity, convergence, and path integral contour deformations <> High Energy Physics - Lattice, High Energy Physics - Phenomenology, High Energy Physics - Theory, Nuclear Theory, Quantum Physics
+- Study of the Standard Model with weak decays charmed hadrons <> High Energy Physics - Experiment, High Energy Physics - Lattice, High Energy Physics - Phenomenology
+- Multicanonical reweighting for the QCD topological susceptibility <> High Energy Physics - Lattice
+- ECM modeling and performance tuning of SpMV and Lattice QCD on A64FX <> Performance, Distributed, Parallel, and Cluster Computing, High Energy Physics - Lattice
+- Renormalization-Group Evolution of the None-local Matrix Element of B-meson In QCD <> High Energy Physics - Phenomenology
+- Progress in Higgs inflation <> High Energy Physics - Phenomenology, Cosmology and Nongalactic Astrophysics, General Relativity and Quantum Cosmology, High Energy Physics - Theory
+- Non-exclusive particle production by γγ interactions in pp collisions at the LHC <> High Energy Physics - Phenomenology, High Energy Physics - Experiment
+- A hybrid model of the proton structure functions <> High Energy Physics - Phenomenology
+- Perturbative benchmark models for a dark shower search program <> High Energy Physics - Phenomenology
+- Non-unitarity of Minkowskian non-local quantum field theories <> High Energy Physics - Theory, General Relativity and Quantum Cosmology
+- Thermodynamics of ideal gas at Planck scale with strong quantum gravity measurement <> High Energy Physics - Theory, Mathematical Physics, Quantum Physics
+- Spin-half bosonic classification <> High Energy Physics - Theory
+- Fermionization and boundary states in 1+1 dimensions <> High Energy Physics - Theory, Strongly Correlated Electrons
+- Moving mirrors, Page curves and bulk entropies in AdS_2 <> High Energy Physics - Theory, Statistical Mechanics, General Relativity and Quantum Cosmology
+- Cohen-Macaulay test ideals over rings of finite and countable Cohen-Macaulay type <> Commutative Algebra
+- N-fiber-full modules <> Commutative Algebra
+- Lefschetz Properties and Perfection of Specht Ideals of Two-Rowed Partitions <> Commutative Algebra
+- Some Singular Lex-Segments <> Algebraic Geometry, Commutative Algebra
+- Bernstein's inequality and holonomicity for certain singular rings <> Commutative Algebra, Algebraic Geometry
+- Canonical subsheaves of torsionfree semistable sheaves <> Algebraic Geometry
+- Hecke operators and analytic Langlands correspondence for curves over local fields <> Algebraic Geometry, High Energy Physics - Theory, Analysis of PDEs, Functional Analysis, Representation Theory
+- Weierstrass models <> Algebraic Geometry
+- Unbounded negativity on rational surfaces in positive characteristic <> Algebraic Geometry
+- On the degree of the canonical map of a surface of general type <> Algebraic Geometry
+- A new minimizing-movements scheme for curves of maximal slope <> Analysis of PDEs
+- The one-sided Lipschitz condition in the follow-the-leader approximation of scalar conservation laws <> Analysis of PDEs
+- Remarks on two connected papers about Keller-Segel systems with nonlinear production <> Analysis of PDEs
+- Stability for an inverse source problem of the damped biharmonic plate equation <> Analysis of PDEs
+- Compressible fluid inside a linear oscillator <> Analysis of PDEs
+- Model category structures on simplicial objects <> Algebraic Topology, Category Theory
+- The chromatic symmetric homology of every non-planar graph contains \mathbb{Z}_2-torsion in bidegree (1,0) <> Combinatorics, Algebraic Topology, Representation Theory
+- The Euler Characteristic: A General Topological Descriptor for Complex Data <> Algebraic Topology
+- Categorical enumerative invariants of the ground field <> Symplectic Geometry, Algebraic Geometry, Algebraic Topology, Quantum Algebra
+- Certain topological methods for computing digital topological complexity <> Algebraic Topology
+- Functions on a convex set which are both ω-semiconvex and ω-semiconcave <> Classical Analysis and ODEs
+- Transcritical Bifurcations and Algebraic Aspects of Quadratic Multiparametric Families <> Dynamical Systems, Classical Analysis and ODEs
+- Cohomology of annuli, duality and L^\infty-differential forms on Heisenberg groups <> Classical Analysis and ODEs, Differential Geometry
+- A note on the generalized-hypergeometric solutions of general and single-confluent Heun equations <> Classical Analysis and ODEs
+- New Coalescences for the Painlevé Equations <> Exactly Solvable and Integrable Systems, Classical Analysis and ODEs
+- Waiter-Client Triangle-Factor Game on the Edges of the Complete Graph <> Combinatorics
+- A note on the metric and edge metric dimensions of 2-connected graphs <> Combinatorics
+- 2-switch transition on unicyclic graphs and pseudoforest <> Combinatorics
+- Deza graphs: a survey and new results <> Combinatorics
+- On combinatorial properties and the zero distribution of certain Sheffer sequences <> Combinatorics, Complex Variables
+- Subprojectivity in abelian categories <> Category Theory, Rings and Algebras
+- Ideals in BIT speciale varieties <> Category Theory, Group Theory, Logic, Rings and Algebras
+- Construction of coend and the reconstruction theorem of bialgebras <> Category Theory, Quantum Algebra
+- Right-cancellable protomodular algebras <> Category Theory, General Topology, Group Theory
+- Crossed squares of cocommutative Hopf algebras <> Category Theory
+- Boundedness of area operators on Bergman spaces <> Complex Variables, Functional Analysis
+- Canonical currents and heights for K3 surfaces <> Dynamical Systems, Algebraic Geometry, Complex Variables, Differential Geometry, Geometric Topology
+- Khavinson conjecture for hyperbolic harmonic functions on the unit ball <> Complex Variables, Analysis of PDEs
+- Exact meromorphic solutions of Schwarzian differential equations <> Complex Variables
+- Combining Rational maps and Kleinian groups via orbit equivalence <> Dynamical Systems, Complex Variables, Geometric Topology
+- On the Ricci curvature of homogeneous Finsler spaces with (α,β)-metrics <> Differential Geometry
+- Ricci-flat graphs with maximum degree at most 4 <> Differential Geometry, Combinatorics
+- Ants and bracket generating distributions in dimension 5 and 6 <> Differential Geometry, Optimization and Control
+- Positive scalar curvature on \mathbf{Pin}^\pm- and \mathbf{Spin}^c-manifolds <> Differential Geometry, Algebraic Topology, K-Theory and Homology
+- A class of Einstein submanifolds of Euclidean space <> Differential Geometry
+- Estimates on the dimension of self-similar measures with overlaps <> Dynamical Systems, Classical Analysis and ODEs
+- Dynamical organization of recollisions by a family of invariant tori <> Dynamical Systems, Chaotic Dynamics, Atomic Physics
+- A remark on uniform expansion <> Dynamical Systems
+- Embeddings between weighted Tandori and Cesàro Function Spaces <> Functional Analysis
+- Random tree Besov priors -- Towards fractal imaging <> Statistics Theory, Functional Analysis, Probability
+- Stability and moment estimates for the stochastic singular Φ-Laplace equation <> Analysis of PDEs, Dynamical Systems, Functional Analysis, Probability
+- Similar transformation of one class of correct restrictions <> Spectral Theory, Functional Analysis
+- Extremal general affine surface areas <> Functional Analysis
+- Convergence of Collatz Sequences: Procedure to Prove the Collatz Conjecture <> General Mathematics
+- The generalization of Schröder's theorem (1871): The multinomial theorem for formal power series under composition <> General Mathematics
+- Comment to: "Generalized hyperideals in locally associative left almost semihypergroups" <> General Mathematics
+- A Solution to the Riemann Hypothesis <> General Mathematics
+- Interpolation of surfaces with asymptotic curves in Euclidean 3-space <> General Mathematics
+- On two problems concerning Eberlein compacta <> General Topology
+- A characterization of the product of the rational numbers and complete Erdős space <> General Topology
+- Decomposition space theory <> Geometric Topology, General Topology
+- Sober topological spaces valued in a quantale <> General Topology, Category Theory
+- Invariant bilinear forms under the rigid motions of a regular polygon <> Group Theory
+- Examples of plane rational curves with two Galois points in positive characteristic, II <> Algebraic Geometry, Group Theory
+- From distributive l-monoids to l-groups, and back again <> Group Theory, Logic
+- Ribbon 2-knot groups of Coxeter type <> Geometric Topology
+- Minimal Euler Characteristics for Even-Dimensional Manifolds with Finite Fundamental Group <> Geometric Topology, Algebraic Topology
+- G-Family Polynomials <> Geometric Topology, Quantum Algebra
+- M/F-Theory as Mf-Theory <> High Energy Physics - Theory, Mathematical Physics, Algebraic Topology, Geometric Topology
+- The Use of Fractional Blocks to Improve Mathematics for Second Grade Elementary School Students at South Bangka Indonesia <> History and Overview
+- History of Singular and its relation to Zariski's multiplicty conjecture <> Algebraic Geometry, History and Overview
+- Proof of the Tijdeman-Zagier Conjecture via Slope Irrationality and Term Coprimality <> Number Theory, History and Overview
+- Spectra of variants of distance matrices of graphs and digraphs: a survey <> Combinatorics, History and Overview
+- Learning-Based Phase Compression and Quantization for Massive MIMO CSI Feedback with Magnitude-Aided Information <> Information Theory, Signal Processing
+- Terahertz Wireless Communications: Research Issues and Challenges for Active and Passive Systems in Space and on the Ground above 100 GHz <> Information Theory
+- Joint Location and Communication Study for Intelligent Reflecting Surface Aided Wireless Communication System <> Information Theory
+- On universal stably free modules in positive characteristic <> Algebraic Geometry, K-Theory and Homology
+- K-theory of right-angled Hecke C*-algebras <> Operator Algebras, K-Theory and Homology
+- Witt groups of spinor varieties <> K-Theory and Homology, Algebraic Geometry
+- Unramified Cohomology of Quadrics in Characteristic Two <> Number Theory, Algebraic Geometry, K-Theory and Homology
+- The strong amalgamation property into union <> Logic
+- A note on cardinal preserving embeddings <> Logic
+- Natural deduction for intuitionistic belief: proof theory and proof-theoretic semantics <> Logic, Logic in Computer Science
+- A Pu-Bonnesen inequality <> Metric Geometry, Differential Geometry
+- The index of certain Stiefel manifolds <> Algebraic Topology, Metric Geometry
+- Lower bound on growth of non-elementary subgroups in relatively hyperbolic groups <> Group Theory, Metric Geometry
+- On lower estimations of square-linear ratio for plane Peano curves <> Metric Geometry
+- Generalized Continuity Equations for Schrödinger and Dirac Equations <> Quantum Physics, Mathematical Physics
+- Interaction of the elementary waves for shallow water equations with discontinuous topography <> Analysis of PDEs, Mathematical Physics
+- G-algebroids: a unified framework for exceptional and generalised geometry, and Poisson-Lie duality <> Differential Geometry, High Energy Physics - Theory, Mathematical Physics
+- Elliptic solutions to Toda lattice hierarchy and elliptic Ruijsenaars-Schneider model <> Exactly Solvable and Integrable Systems, Mathematical Physics
+- On Liouville-type theorems for the 2D stationary MHD equations <> Analysis of PDEs, Mathematical Physics
+- High-order linearly implicit structure-preserving exponential integrators for the nonlinear Schrödinger equation <> Numerical Analysis
+- Stability and conservation properties of Hermite-based approximations of the Vlasov-Poisson system <> Numerical Analysis
+- A Certified Reduced Basis Methods for Linear Parametrized Parabolic Optimal Control Problems in Space-Time Formulation <> Numerical Analysis
+- Two infinite families of elliptic curves with rank greater than one <> Number Theory
+- The smallest period of a periodic phenomenon pertaining to v-palindromic numbers <> Number Theory
+- Explicit Relations of Some Variants of Convoluted Multiple Zeta Values <> Number Theory
+- Generalized cyclotomic mappings: Switching between polynomial, cyclotomic, and wreath product form <> Number Theory
+- Wold Decomposition on Odometer Semigroups <> Operator Algebras, Functional Analysis
+- Constructing equivalence bimodules between noncommutative solenoids: a two-pronged approach <> Operator Algebras
+- From non-unitary wheeled PROPs to smooth amplitudes and generalised convolutions <> Combinatorics, Mathematical Physics, Operator Algebras
+- C*-dynamical invariants and Toeplitz algebras of graphs <> Operator Algebras
+- One-Point Gradient-Free Methods for Smooth and Non-Smooth Saddle-Point Problems <> Optimization and Control
+- Solving smooth min-min and min-max problems by mixed oracle algorithms <> Optimization and Control
+- Network-Level Optimization for Unbalanced Power Distribution System: Approximation and Relaxation <> Optimization and Control
+- An algorithm to construct subsolutions of convex optimal control problems <> Optimization and Control, Probability
+- Busemann process and semi-infinite geodesics in Brownian last-passage percolation <> Probability
+- On Concentration Inequalities for Vector-Valued Lipschitz Functions <> Probability
+- The L_p-Gaussian Minkowski problem <> Probability, Analysis of PDEs
+- Rates of multivariate normal approximation for statistics in geometric probability <> Probability
+- A Central Limit Theorem for Diffusion in Sparse Random Graphs <> Probability, Discrete Mathematics
+- Drinfel'd doubles of the n-rank Taft algebras, and a generalization of the Jones polynomial <> Quantum Algebra, Mathematical Physics
+- Q-operators are 't Hooft lines <> High Energy Physics - Theory, Statistical Mechanics, Quantum Algebra
+- On the representation theory of the vertex algebra L_{-5/2}(sl(4)) <> Quantum Algebra, Representation Theory
+- The Link-Indecomposable Components of Hopf Algebras and Their Products <> Rings and Algebras, Quantum Algebra
+- Tribracket Polynomials <> Geometric Topology, Quantum Algebra
+- The geometric classification of 2-step nilpotent algebras and applications <> Rings and Algebras, Algebraic Geometry
+- Structured Singular values on some generalized stochastic matrices <> Rings and Algebras, Probability
+- Degree of Orthomorphism Polynomials over Finite Fields <> Combinatorics, Rings and Algebras
+- Green fields <> Category Theory, Group Theory, Rings and Algebras, Representation Theory
+- Tensor hierarchy extensions of hyperbolic Kac-Moody algebras <> Representation Theory, High Energy Physics - Theory
+- Conjectural invariance with respect to the fusion system of an almost-source algebra <> Representation Theory
+- Quasi-simple modules and Loewy lengths in modular representations of reductive Lie algebras <> Representation Theory
+- Symmetric permutation invariants in some tensor products <> Combinatorics, Representation Theory
+- Arnold Conjecture and Morava K-theory <> Symplectic Geometry, Algebraic Topology
+- Entropy collapse versus entropy rigidity for Reeb and Finsler flows <> Dynamical Systems, Differential Geometry, Symplectic Geometry
+- Transverse Kähler holonomy in Sasaki Geometry and {\oldmathcal S}-Stability <> Differential Geometry, Symplectic Geometry
+- Graded covering of a supermanifold I. The case of a Lie supergroup <> Differential Geometry, Mathematical Physics, Symplectic Geometry
+- Analysis of Hilfer fractional integro-differential equations with almost sectorial operators <> Spectral Theory, Classical Analysis and ODEs
+- A counterexample to Payne's nodal line conjecture with few holes <> Spectral Theory, Analysis of PDEs
+- Generalised canonical systems related to matrix string equations: corresponding structured operators and high-energy asymptotics of the Weyl functions <> Spectral Theory, Mathematical Physics, Classical Analysis and ODEs
+- Eigenvalues of singular measures and Connes noncommutative integration <> Spectral Theory, Functional Analysis
+- Local Tail Statistics of Heavy-Tailed Random Matrix Ensembles with Unitary Invariance <> Mathematical Physics, Disordered Systems and Neural Networks, Probability, Statistics Theory
+- On the Inability of the Higher Criticism to Detect Rare/Weak Departures <> Statistics Theory
+- Smeariness Begets Finite Sample Smeariness <> Statistics Theory
+- Finite Sample Smeariness on Spheres <> Statistics Theory, Methodology
+- Continuous scaled phase-type distributions <> Probability, Statistics Theory
+- Nambu dynamics and its noncanonical Hamiltonian representation in many degrees of freedom systems <> Mathematical Physics, High Energy Physics - Theory, Classical Physics
+- Expansions for ground state in the transverse field Edwards-Anderson model <> Mathematical Physics, Disordered Systems and Neural Networks
+- Tipping induced by multiplexing on two layer networks <> Adaptation and Self-Organizing Systems, Physics and Society
+- Antipredator behavior in the rock-paper-scissors model <> Populations and Evolution, Adaptation and Self-Organizing Systems, Pattern Formation and Solitons, Biological Physics
+- Algebraic Theory of Quantum Synchronization and Limit Cycles under Dissipation <> Quantum Physics, Mesoscale and Nanoscale Physics, Quantum Gases, Statistical Mechanics, Adaptation and Self-Organizing Systems
+- Ghost in the Ising machine <> Mesoscale and Nanoscale Physics, Statistical Mechanics, Adaptation and Self-Organizing Systems, Chaotic Dynamics
+- Optimization of periodic input waveforms for global entrainment of weakly forced limit-cycle oscillators <> Adaptation and Self-Organizing Systems
+- Construction of explicit symplectic integrators in general relativity. II. Reissner-Nordstrom black holes <> General Relativity and Quantum Cosmology, Instrumentation and Methods for Astrophysics, Chaotic Dynamics, Computational Physics
+- Chaos in Qubit Coupled Optomechanical Systems <> Quantum Physics, Chaotic Dynamics, Optics
+- Extratropical low-frequency variability with ENSO forcing: A reduced-order coupled model study <> Atmospheric and Oceanic Physics, Chaotic Dynamics
+- Eigenvector-based analysis of cluster synchronization in general complex networks <> Adaptation and Self-Organizing Systems, Chaotic Dynamics, Physics and Society
+- Discontinuous yielding of pristine micro-crystals <> Materials Science, Mesoscale and Nanoscale Physics, Pattern Formation and Solitons
+- Modulational instability in optical fibers with randomly-kicked normal dispersion <> Optics, Pattern Formation and Solitons
+- Periodic patterns displace active phase separation <> Pattern Formation and Solitons
+- Dynamic soliton-mean flow interaction with nonconvex flux <> Pattern Formation and Solitons, Fluid Dynamics
+- Extreme Superposition: High-Order Fundamental Rogue Waves in the Far-Field Regime <> Exactly Solvable and Integrable Systems, Analysis of PDEs, Pattern Formation and Solitons
+- Conformal quantum mechanics & the integrable spinning Fishnet <> High Energy Physics - Theory, Exactly Solvable and Integrable Systems
+- Boundary from bulk integrability in three dimensions: 3D reflection maps from tetrahedron maps <> Mathematical Physics, Quantum Algebra, Exactly Solvable and Integrable Systems
+- Reevaluating reactor antineutrino spectra with new measurements of the ratio between ^{235}U and ^{239}Pu β spectra <> Nuclear Experiment, High Energy Physics - Phenomenology, Nuclear Theory
+- Pseudo spin doublet bands and Gallagher Moszkowski doublet bands in ^{100}Y <> Nuclear Experiment, Nuclear Theory
+- Opportunities of OO and pO collisions at the LHC <> High Energy Physics - Phenomenology, High Energy Astrophysical Phenomena, High Energy Physics - Experiment, Nuclear Experiment, Nuclear Theory
+- Property investigation for different wedge-shaped CsI(Tl)s <> Instrumentation and Detectors, Nuclear Experiment
+- Main magnetic focus ion source: Device with high electron current density <> Atomic Physics, Nuclear Experiment, Accelerator Physics, Plasma Physics
+- Rosenbluth separation of \boldsymbol {dσ_{L}/dt} and \boldsymbol {dσ_{T}/dt} in \boldsymbol π^{\bf 0} deeply virtual electroproduction from the proton <> High Energy Physics - Phenomenology, Nuclear Experiment, Nuclear Theory
+- Multiple SU(3) algebras in interacting boson model and shell model: Results for (β,γ) bands and scissors 1^+ band <> Nuclear Theory
+- Non-perturbative methods for NN singular interactions <> Nuclear Theory, High Energy Physics - Phenomenology
+- The description of giant dipole resonance key parameters with multitask neural networks <> Nuclear Theory
+- Exploring Origins for Correlations between Flow Harmonics and Transverse Momentum in Small Collision Systems (Unambiguous Ambiguity) <> Nuclear Theory, Nuclear Experiment
+- Universality in the tunneling potential for curved field emitters -- a line charge model approach <> Applied Physics, Mesoscale and Nanoscale Physics, Accelerator Physics, Plasma Physics
+- Relativistic particle incoherent scattering by the nuclei of crystal plane atoms <> Accelerator Physics, High Energy Physics - Experiment, Nuclear Experiment, Instrumentation and Detectors, Quantum Physics
+- Observation of soft X-ray Cherenkov radiation in Be and Si foils <> Accelerator Physics
+- A fitting algorithm for optimizing ion implantation energies and doses <> Materials Science, Accelerator Physics
+- Statistical Post-processing for Gridded Temperature Forecasts Using Encoder-Decoder Based Deep Convolutional Neural Networks <> Atmospheric and Oceanic Physics, Machine Learning
+- Shear flows and their suppression at large aspect ratio. Two-dimensional simulations of a growing convection zone <> Fluid Dynamics, Atmospheric and Oceanic Physics, Geophysics
+- The future lifespan of Earth's oxygenated Atmosphere <> Earth and Planetary Astrophysics, Atmospheric and Oceanic Physics
+- A Deep and Wide Neural Network-based Model for Rajasthan Summer Monsoon Rainfall (RSMR) Prediction <> Machine Learning, Atmospheric and Oceanic Physics
+- Closed-formed ab initio solutions of geometric albedos and reflected light phase curves of exoplanets <> Earth and Planetary Astrophysics, Atmospheric and Oceanic Physics
+- Thermal stress around a smooth cavity in a plate subjected to uniform heat flux <> Applied Physics
+- Interplay of transport mechanisms during the evaporation of a pinned sessile water droplet <> Fluid Dynamics, Applied Physics
+- On the Performance of Dual-Gate Reconfigurable Nanowire Transistors <> Applied Physics
+- Direct quantification of quasi-Fermi level splitting in organic semiconductor devices <> Applied Physics, Materials Science
+- Tuning the Reactivity of Nanoenergetic Gas Generators Based on Bismuth and Iodine oxidizers <> Applied Physics
+- High-performance coherent population trapping atomic clock with direct-modulation distributed Bragg reflector laser <> Atomic Physics
+- Realization of a Townes soliton in a two-component planar Bose gas <> Quantum Gases, Pattern Formation and Solitons, Atomic Physics
+- Quadrupole radiation and e^+e^- pair production in the collision of nonrelativistic nuclei <> Nuclear Theory, Atomic Physics
+- Minimization of ion micromotion with artificial neural network <> Atomic Physics, Quantum Physics
+- Force spectroscopy with electromagnetic tweezers <> Biological Physics, Applied Physics, Instrumentation and Detectors
+- Ultra-Slow Acoustic Energy Transport in Dense Fish Aggregates <> Soft Condensed Matter, Applied Physics, Biological Physics, Fluid Dynamics
+- Neuronal heterogeneity modulates phase-synchronization between unidirectionally coupled populations with excitation-inhibition balance <> Neurons and Cognition, Biological Physics
+- Hidden Vibronic and Excitonic Structure and Vibronic Coherence Transfer in the Bacterial Reaction Center <> Chemical Physics, Biological Physics
+- Hyperpolarization of cis-15N,15N'-azobenzene by parahydrogen at ultralow magnetic fields <> Chemical Physics
+- From Prescriptive to Predictive: an Interdisciplinary Perspective on the Future of Computational Chemistry <> Chemical Physics, Computational Physics
+- High-resolution infrared action spectroscopy of the fundamental vibrational band of CN+ <> Chemical Physics, Astrophysics of Galaxies
+- Window Function for Chirped Pulse Spectroscopy with Enhanced Signal-to-noise Ratio and Lineshape Correction <> Chemical Physics, Data Analysis, Statistics and Probability, Optics
+- Peridynamic stress is the static Virial stress <> Classical Physics, Materials Science
+- Dynamics of prestressed elastic lattices: homogenization, instabilities, and strain localization <> Classical Physics
+- Efficient Computation of Spatially-Discrete Traveling-Wave Modulated Structures <> Applied Physics, Classical Physics
+- A derivation of the Doppler factor in the Lienard-Wiechert potentials <> Classical Physics
+- An Introduction to Fluid Dynamics and Numerical Solution of Shock Tube Problem by Using Roe Solver <> Fluid Dynamics, Computational Physics
+- A Generative Model for Extrapolation Prediction in Materials Informatics <> Computational Physics
+- Computing foaming flows across scales: from breaking waves to microfluidics <> Computational Physics, Numerical Analysis, Fluid Dynamics
+- High-productivity, high-performance workflow for virus-scale electrostatic simulations with Bempp-Exafmm <> Computational Physics, Computational Engineering, Finance, and Science, Biological Physics
+- Reference Energies for Intramolecular Charge-Transfer Excitations <> Chemical Physics, Materials Science, Strongly Correlated Electrons, Computational Physics
+- The network asymmetry caused by the degree correlation and its effect on the bimodality in control <> Physics and Society, Data Analysis, Statistics and Probability
+- On the analysis of signal peaks in pulse-height spectra <> Data Analysis, Statistics and Probability, Nuclear Experiment
+- A training programme for early-stage researchers that focuses on developing personal science outreach portfolios <> Physics Education, Popular Physics, Quantum Physics
+- Not engaging with problems in the lab: Students' navigation of conflicting data and models <> Physics Education
+- Analysis of the PICUP Collection: Strengths and Areas for Development <> Physics Education
+- Phase-Field Modeling of Selective Laser Brazing of Diamond Grits <> Fluid Dynamics
+- Investigation of NOx in piloted stabilized methane-air diffusion flames using Finite-rate and Infinitely-fast chemistry based combustion models <> Fluid Dynamics
+- Data-Driven Approach for Noise Reduction in Pressure-Sensitive Paint Data Based on Modal Expansion and Time-Series Data at Optimally Placed Points <> Fluid Dynamics
+- Near-Wake Dynamics of a Vertical-Axis Turbine <> Fluid Dynamics
+- Thermal Capillary Wave Growth and Surface Roughening of Nanoscale Liquid Films <> Fluid Dynamics
+- Some positivity results of the curvature on the group corresponding to the incompressible Euler equation with Coriolis force <> Differential Geometry, Analysis of PDEs, Fluid Dynamics, Geophysics
+- The role of post-shock heating by plastic deformation during impact devolatilization of calcite <> Earth and Planetary Astrophysics, Geophysics
+- An HPC-Based Hydrothermal Finite Element Simulator for Modeling Underground Response to Community-Scale Geothermal Energy Production <> Distributed, Parallel, and Cluster Computing, Geophysics
+- Gauge-underdetermination and shades of locality in the Aharonov-Bohm effect <> Quantum Physics, History and Philosophy of Physics
+- A causal and continuous interpretation of the quantum theory: About an original manuscript by David Bohm sent to Louis de Broglie in 1951 <> History and Philosophy of Physics, Quantum Physics
+- The Architected Multi-material Scintillator System: Designs and Modeling <> Instrumentation and Detectors
+- PETALO: a Time-of-Flight PET with liquid xenon <> Instrumentation and Detectors
+- Calibration of the scintillation of cerium-doped yttrium aluminum garnet crystals irradiated by monoenergetic 4 MeV energy electrons <> Instrumentation and Detectors, Accelerator Physics
+- Study of p-type silicon MOS capacitors at HL-LHC radiation levels through cobalt-60 gamma source and TCAD simulation <> Instrumentation and Detectors, High Energy Physics - Experiment
+- Wavelength-Shifting Performance of Polyethylene Naphthalate Films in a Liquid Argon Environment <> Instrumentation and Detectors
+- Single-beam all-optical non-zero field magnetometric sensor for magnetoencephalography applications <> Optics, Atomic Physics, Medical Physics, Quantum Physics
+- Respiratory aerosols and droplets in the transmission of infectious diseases <> Medical Physics
+- Fluid structure interaction: Insights into biomechanical implications of endograft after thoracic endovascular aortic repair <> Medical Physics
+- Directional-TV Algorithm for Image Reconstruction from Limited-Angular-Range Data <> Medical Physics
+- Ultrasound Matrix Imaging. I. The focused reflection matrix and the F-factor <> Applied Physics, Image and Video Processing, Medical Physics
+- Efficient Frequency Doubling with Active Stabilization on Chip <> Optics, Quantum Physics
+- Nonlinear bicolor holography using plasmonic metasurfaces <> Optics
+- Haidinger-Michelson rings in white light <> Optics
+- Spontaneously Formed Plasmonic-MoTe2 Hybrid Platform for Ultrasensitive Raman Enhancement <> Optics, Materials Science, Applied Physics, Chemical Physics
+- Ultracompact energy transfer in anapole-based metachains <> Optics, Mesoscale and Nanoscale Physics, Applied Physics
+- Formation of Solitary Structures and Double Layer in Weakly Degenerate Electron-Ion Quantum Plasma in Ionosphere <> Plasma Physics
+- Compact Spectroscopy of keV to MeV X-rays from a Laser Wakefield Accelerator <> Plasma Physics
+- Arc plasma ablation of quartz crystals <> Plasma Physics
+- Detecting reconnection sites using the Lorentz Transformations for electromagnetic fields <> Solar and Stellar Astrophysics, Plasma Physics, Space Physics
+- Towers on the Moon: 1. Concrete <> Earth and Planetary Astrophysics, Popular Physics
+- Longevity is the key factor in the search for technosignatures <> Instrumentation and Methods for Astrophysics, Earth and Planetary Astrophysics, Popular Physics
+- Community Detection in Weighted Multilayer Networks with Ambient Noise <> Social and Information Networks, Physics and Society, Applications, Methodology, Machine Learning
+- An Agent-Based Modelling Approach to Brain Drain <> Physics and Society, Multiagent Systems, General Economics
+- Nonparametric estimation of the preferential attachment function from one network snapshot <> Social and Information Networks, Data Analysis, Statistics and Probability, Physics and Society, Methodology
+- Spreader events and the limitations of projected networks for capturing dynamics on multipartite networks <> Physics and Society
+- The combined role of distance and frequency travel restrictions on spread of disease <> Physics and Society, Populations and Evolution
+- System Analysis and Test-Bed for an Atmosphere-Breathing Electric Propulsion System using an Inductive Plasma Thruster <> Space Physics
+- Multiscale Solar Wind Turbulence Properties inside and near Switchbacks measured by Parker Solar Probe <> Solar and Stellar Astrophysics, Space Physics
+- Ripples in the Heliospheric Current Sheet at Solar Minimum: Dependence on Latitude and Transient Outflows <> Space Physics, Solar and Stellar Astrophysics
+- Extreme space weather events caused by super active regions during solar cycles 21-24 <> Solar and Stellar Astrophysics, Space Physics
+- Thoughts on the Proteins Native State <> Biomolecules, Populations and Evolution
+- Chemistry-informed Macromolecule Graph Representation for Similarity Computation and Supervised Learning <> Machine Learning, Computers and Society, Biomolecules, Quantitative Methods, Machine Learning
+- Hydrophobic interaction determines docking affinity of SARS CoV 2 variants with antibodies <> Biomolecules
+- Chemo-mechanical model of a cell as a stochastic active gel <> Biological Physics, Cell Behavior
+- Noncoding RNAs and deep learning neural network discriminate multi-cancer types <> Molecular Networks, Machine Learning
+- Parallel implementations of random time algorithm for chemical network stochastic simulations <> Molecular Networks
+- eQuilibrator 3.0 -- a platform for the estimation of thermodynamic constants <> Molecular Networks, Quantitative Methods
+- Microwave amplitude reflecting instability of LFP electrode ground field is useful for consciousness state identification <> Neurons and Cognition
+- Contrast Sensitivity Functions in Autoencoders <> Neurons and Cognition
+- On Information (pseudo) Metric <> Probability, Information Theory, Neurons and Cognition, Machine Learning
+- On Information Links <> Neurons and Cognition, Information Theory, Algebraic Topology
+- Update on the multimodal pathophysiological dataset of gradual cerebral ischemia in a cohort of juvenile pigs: auditory, sensory and high-frequency sensory evoked potentials <> Neurons and Cognition, Quantitative Methods
+- Towards Understanding the COVID-19 Case Fatality Rate <> Applications, Other Quantitative Biology
+- Dynamic and Thermodynamic Models of Adaptation <> Other Quantitative Biology
+- Dimensional Reduction in Complex Living Systems: Where, Why, and How <> Other Quantitative Biology, Biological Physics
+- Statistical methods used to combine the effective reproduction number, R(t), and other related measures of COVID-19 in the UK <> Applications, Physics and Society, Populations and Evolution
+- Delay differential equations for the spatially-resolved simulation of epidemics with specific application to COVID-19 <> Numerical Analysis, Physics and Society, Populations and Evolution
+- Mobility driven coexistence of living organisms <> Physics and Society, Statistical Mechanics, Populations and Evolution
+- Understanding Species Abundance Distributions in Complex Ecosystems of Interacting Species <> Populations and Evolution
+- Brain Signals to Rescue Aphasia, Apraxia and Dysarthria Speech Recognition <> Sound, Machine Learning, Audio and Speech Processing, Quantitative Methods
+- Silent versus modal multi-speaker speech recognition from ultrasound and video <> Audio and Speech Processing, Computation and Language, Sound, Quantitative Methods
+- Identification and Development of Therapeutics for COVID-19 <> Quantitative Methods
+- Betti Curves of Rank One Symmetric Matrices <> Quantitative Methods
+- Algorithmic asymptotic analysis: extending the arsenal of cancer immunology modeling <> Dynamical Systems, Tissues and Organs
+- Emerging Technologies for Cancer Research: Towards Personalized Medicine with Microfluidic Platforms and 3D Tumor Models <> Biological Physics, Tissues and Organs
+- Organ-specific Branching Morphogenesis <> Tissues and Organs
+- Time-dependent Clearance of Cyclosporine in Adult Renal Transplant Recipients: A Population Pharmacokinetic Perspective <> Tissues and Organs
+- DeepSets and their derivative networks for solving symmetric PDEs <> Optimization and Control, Probability, Computational Finance
+- Trading Signals In VIX Futures <> Computational Finance, Trading and Market Microstructure
+- Pricing Perpetual American put options with asset-dependent discounting <> Mathematical Finance, Computational Finance
+- Rate of convergence for particles approximation of PDEs in Wasserstein space <> Optimization and Control, Probability, Computational Finance
+- No-Transaction Band Network: A Neural Network Architecture for Efficient Deep Hedging <> Computational Finance, Portfolio Management, Pricing of Securities, Risk Management
+- A Comparison of Indonesia E-Commerce Sentiment Analysis for Marketing Intelligence Effort <> General Economics
+- Sales Prediction Model Using Classification Decision Tree Approach For Small Medium Enterprise Based on Indonesian E-Commerce Data <> General Economics, Computers and Society
+- Computing Prices for Target Profits in Contracts <> General Economics, Information Theory
+- Consequential LCA for territorial and multimodal transportation policies: method and application to the free-floating e-scooter disruption in Paris <> General Economics
+- The Origination and Distribution of Money Market Instruments: Sterling Bills of Exchange during the First Globalization <> General Finance, Trading and Market Microstructure
+- The Impact of COVID-19 on Stock Market Volatility in Pakistan <> General Finance
+- Reducing the Volatility of Cryptocurrencies -- A Survey of Stablecoins <> General Finance, Cryptography and Security
+- Indian Economy and Nighttime Lights <> General Finance, Machine Learning
+- Pricing Exchange Rate Options and Quanto Caps in the Cross-Currency Random Field LIBOR Market Model <> Pricing of Securities, Probability, Mathematical Finance
+- The Support and Resistance Line Method: An Analysis via Optimal Stopping <> Trading and Market Microstructure, Mathematical Finance
+- Robust market-adjusted systemic risk measures <> Mathematical Finance
+- Defaultable term structures driven by semimartingales <> Mathematical Finance, Probability
+- A combinatorial optimization approach to scenario filtering in portfolio selection <> Optimization and Control, Portfolio Management
+- Explainable AI in Credit Risk Management <> Risk Management, Machine Learning
+- Fairness in Credit Scoring: Assessment, Implementation and Profit Implications <> Machine Learning, Machine Learning, Risk Management
+- Set-Valued Dynamic Risk Measures for Processes and Vectors <> Risk Management, Mathematical Finance
+- Confronting Machine Learning With Financial Research <> Statistical Finance, Machine Learning, Econometrics
+- How good is good? Probabilistic benchmarks and nanofinance+ <> Statistical Finance
+- The LOB Recreation Model: Predicting the Limit Order Book from TAQ History Using an Ordinary Differential Equation Recurrent Neural Network <> Trading and Market Microstructure, Computational Engineering, Finance, and Science, Neural and Evolutionary Computing, Statistical Finance
+- Forecasting high-frequency financial time series: an adaptive learning approach with the order book data <> Statistical Finance, Econometrics, Trading and Market Microstructure, Applications
+- Statistical mechanics and Bayesian Inference addressed to the Osborne Paradox <> Statistical Finance
+- Evolution of projective measurements under qubit channels and associated energy cost <> Quantum Physics
+- Relativistic corrections to the Di{ó}si-Penrose model <> Quantum Physics
+- Nonlinear dynamics and quantum chaos of a family of kicked p-spin models <> Quantum Physics, Chaotic Dynamics
+- Mutual Information Scaling for Tensor Network Machine Learning <> Quantum Physics
+- Information geometry for Fermi-Dirac and Bose-Einstein quantum statistics <> Quantum Physics, Statistical Mechanics
+- A Hierarchical Spike-and-Slab Model for Pan-Cancer Survival Using Pan-Omic Data <> Applications
+- The Effects of the NBA COVID Bubble on the NBA Playoffs: A Case Study for Home-Court Advantage <> Applications
+- Examining socioeconomic factors to understand the hospital case-fatality rates of COVID-19 in the city of Sao Paulo, Brazil <> Applications
+- Stochastic Cutting Planes for Data-Driven Optimization <> Optimization and Control, Computation, Machine Learning
+- Deciphering Bitcoin Blockchain Data by Cohort Analysis <> General Economics, Numerical Analysis, Computational Finance, Computation
+- Detecting Outliers in High-dimensional Data with Mixed Variable Types using Conditional Gaussian Regression Models <> Statistics Theory, Computation
+- Fast selection of nonlinear mixed effect models using penalized likelihood <> Methodology, Computation
+- A Comparison of Likelihood-Free Methods With and Without Summary Statistics <> Methodology, Computation
+- Randomization Inference for Composite Experiments with Spillovers and Peer Effects <> Methodology, Statistics Theory
+- Instrumental variables, spatial confounding and interference <> Methodology
+- Tangent functional canonical correlation analysis for densities and shapes, with applications to multimodal imaging data <> Methodology, Applications
+- Exact Simulation of Max-Infinitely Divisible Processes <> Methodology, Computation
+- Maximum Approximate Bernstein Likelihood Estimation of Densities in a Two-sample Semiparametric Model <> Methodology
+- Kernel Interpolation for Scalable Online Gaussian Processes <> Machine Learning, Machine Learning
+- Variational Laplace for Bayesian neural networks <> Machine Learning, Machine Learning
+- Asymptotic Risk of Overparameterized Likelihood Models: Double Descent Theory for Deep Neural Networks <> Machine Learning, Machine Learning, Statistics Theory
+- Hessian Eigenspectra of More Realistic Nonlinear Models <> Machine Learning, Machine Learning, Spectral Theory
+- Online High-Dimensional Change-Point Detection using Topological Data Analysis <> Methodology, Algebraic Topology, Other Statistics
+- Minimizing Information Leakage of Abrupt Changes in Stochastic Systems <> Systems and Control, Other Statistics
+- Algorithmic Obstructions in the Random Number Partitioning Problem <> Statistics Theory, Mathematical Physics, Probability
+- Decision tree-based estimation of the overlap of two probability distributions <> Statistics Theory, Probability
+
+::: Country Extraction Single
+% Extract the country from each sentence below:
+% output the country for setence
+- Jaishankar speaks to US special envoy on Afghanistan, takes stock of Taliban peace talks <> Afghanistan
+- With less U.S. tactical support, Afghanistan’s elite forces are struggling to roll back Taliban advances <> Afghanistan
+- 1 person killed, over 18 injured in Afghanistan blast <> Afghanistan
+- 5 killed in recent targeted attacks in Afghanistan <> Afghanistan
+- Afghanistan Vs Zimbabwe, Live Streaming: When And Where To Watch the 2nd Cricket Test Match in Abu Dhabi <> Afghanistan
+- Albanian world heritage site struggles without tourists <> Albania
+- Albania to build 2nd international airport to boost tourism <> Albania
+- Construction Begins on MVRDV's Renovation Project of the Pyramid, a Brutalist Monument in Tirana, Albania <> Albania
+- Russia gives it back to Albania, expels its diplomat <> Albania
+- Quake info: Unconfirmed quake Albania 3 Mar 2021 11:19 am (GMT +1) - 114 user experience reports <> Albania
+- Explained: Why France has admitted to killing an Algerian freedom fighter 6 decades later <> Algeria
+- 7 killed, 3 missing in floods in northern Algeria <> Algeria
+- Are Morocco and Algeria on the brink of war? <> Algeria
+- Morocco/Algeria: Military leaders in the shadows <> Algeria
+- Morocco/Algeria: The armed forces behind the Western Sahara conflict <> Algeria
+- $667K boosts prenatal healthcare, telemedicine network for American Samoa | University of Hawaiʻi System News <> American Samoa
+- Tsunami Watch, Advisory Canceled for Hawaii, American Samoa | The Weather Channel - Articles from The Weather Channel | weather.com <> American Samoa
+- Close to 24,000 Covid-19 vaccines rolled out in American Samoa <> American Samoa
+- People Seek Higher Ground in American Samoa Amid Tsunami Warning <> American Samoa
+- Historic First: Migo first female American Samoan promoted to CMSgt in US Air Force <> American Samoa
+- Barça B 0-1 Andorra: First home defeat <> Andorra
+- Eder Sarabia on Andorra, Barcelona and Gerard Pique: "Gerard is very, very committed to this project" <> Andorra
+- Why Andorra is the new 'Silicon Valley for YouTubers' <> Andorra
+- Freeride World Tour 2021: Andorra Day 1 highlights <> Andorra
+- Fabio Quartararo, the Andorran prince hoping to become MotoGP king <> Andorra
+- Angola: A robot to fight COVID-19 <> Angola
+- Angola becomes the first country in Eastern and Southern Africa region to receive COVAX vaccines against COVID-19 - Angola <> Angola
+- Nigerian solar power provider AllBase plans to expand to Angola <> Angola
+- India delivers Made-in-India Covid-19 vaccines to Angola <> Angola
+- Fugro performs environmental and geotechnical surveys offshore Angola <> Angola
+- How the Little Island of Anguilla Did Pretty Much Everything Right With Its Covid Protocols <> Anguilla
+- Anguilla Declares Itself Virus-Free <> Anguilla
+- Anguilla Names New Destination Experience Manager <> Anguilla
+- Anguilla Expands Meads Bay “Bubble” Caribbean Journal <> Anguilla
+- Anguilla expands ‘holiday bubble’ as Brits plan to resume international travel from May <> Anguilla
+- Iceberg larger than NYC breaks of from Antarctica’s Brunt Ice Shelf, netizens react <> Antarctica
+- Accidental discovery of extreme life beneath Antarctica’s ice shelves poses several questions <> Antarctica
+- What makes Antarctica so unique? <> Antarctica
+- Accidental discovery of life deep beneath Antarctica's ice shelves baffles scientists <> Antarctica
+- EXPLAINED – What breaking of massive iceberg means for Antarctica, latest one being bigger than New York City <> Antarctica
+- Mehul Choksi unlikely to return before 2027, says Antigua and Barbuda PMO <> Antigua and Barbuda
+- Antigua and Barbuda thanks PM Modi for demonstrating 'act of benevolence' by distributing COVID-19 vaccines <> Antigua and Barbuda
+- Antigua and Barbuda National Participates in Prestigious Fulbright Program | US Embassy in Barbados, the Eastern Caribbean, and the OECS <> Antigua and Barbuda
+- Antigua and Barbuda Yachting Industry “Open for Business” <> Antigua and Barbuda
+- US Visa Renewal Interview Waiver Extended to Antigua and Barbuda | US Embassy in Barbados, the Eastern Caribbean, and the OECS <> Antigua and Barbuda
+- Abortion Is Now Legal in Argentina, but Opponents Are Making It Hard to Get <> Argentina
+- Argentina reopens theater, welcomes nightlife as Brazil starts new lockdown <> Argentina
+- Argentina Open 2021: Sumit Nagal goes down fighting in quarter-final against Ramos-Vinolas <> Argentina
+- Argentina’s perpetual crisis <> Argentina
+- Welcome Back to Casa Argentina, We Are Online Now! <> Argentina
+- Scarred by war, Armenian veterans look warily to the future <> Armenia
+- 'Over $50B material damage inflicted on Azerbaijan by Armenia' <> Armenia
+- Post-war report: Armenia accuses Azerbaijan of dragging feet on POWs <> Armenia
+- Armenia opposition breaks into government building <> Armenia
+- Kremlin says Armenia should comply with Karabakh ceasefire agreements <> Armenia
+- Aruba Accelerates Digital Transformation from Edge-to-Cloud on Microsoft Azure <> Aruba
+- Aruba Sees Strong Response to “Workation” Program <> Aruba
+- Aruba collaborates with Microsoft to accelerate digital transformation from edge-to-cloud - Help Net Security <> Aruba
+- Aruba Expands Roster of Easy-to-Deploy Workplace Safety Solutions <> Aruba
+- Aruba to use edge deployments for work place safety solution <> Aruba
+- Familiar questions remain for Australia in T20 jigsaw puzzle <> Australia
+- Australian Senator flags issue of violence by extremist, right-wing Hindu nationalists <> Australia
+- India-Australia trade agreement gathering momentum under Morrison: Report <> Australia
+- Explained: Why scientists want ‘Australia’s worst female serial killer’ to be pardoned based on genetics <> Australia
+- Recent Match Report - Australia vs New Zealand 4th T20I 2020/21 <> Australia
+- Austria suspends AstraZeneca COVID-19 vaccine batch after death <> Austria
+- Austrian state targets Muslim scholar researching Islamophobia | Daily Sabah <> Austria
+- Israel, Austria and Denmark establish vaccine-supply alliance <> Austria
+- Professional Travel To And From Austria: What Is Allowed? - Immigration - Austria <> Austria
+- Cafe and restaurant terraces to reopen this month in Austria <> Austria
+- Azerbaijan founder commented 66 years after death <> Azerbaijan
+- Virtually travel Azerbaijan, the Land of Fire, on this stunning photo tour <> Azerbaijan
+- 'Over $50B material damage inflicted on Azerbaijan by Armenia' <> Azerbaijan
+- The mystery of Azerbaijan's missing army chief <> Azerbaijan
+- Post-war report: Armenia accuses Azerbaijan of dragging feet on POWs <> Azerbaijan
+- The Bahamas And Romance Go Hand In Hand <> Bahamas
+- Bahamas Kicks Off Virtual Romance Expo Caribbean Journal <> Bahamas
+- Do Not Do These Things While Visiting the Bahamas <> Bahamas
+- Rosewood Baha Mar Reopens Today On Nassau In The Bahamas <> Bahamas
+- Luxe for the lady boss: Time with family, Bahamas vacay, mental peace <> Bahamas
+- Bahrain opens ticket sales for fully vaccinated or Covid-recovered fans <> Bahrain
+- Bahrain's Gulf Air signs up for IATA travel pass <> Bahrain
+- India, Bahrain discuss ways to boost cooperation <> Bahrain
+- Formula One set to reject Bahrain vaccines offer <> Bahrain
+- Report reveals details of impact, fire during Romain Grosjean’s wicked crash at Bahrain <> Bahrain
+- Ahead of PM's visit, India sends warships to Bangladesh to mark 50th anniversary of 1971 war <> Bangladesh
+- PM Modi to inaugurate ‘Maitri Setu' between India and Bangladesh on March 9 <> Bangladesh
+- Road Safety World Series, England Legends vs Bangladesh Legends: Live streaming, tv channels, match timings... <> Bangladesh
+- ‘Happy with Bangladesh’s graduation from LDC’ <> Bangladesh
+- Killings along India-Bangladesh border because of crime: Jaishankar <> Bangladesh
+- Barbados steps up Covid-19 vaccination efforts <> Barbados
+- Prime Minister of Barbados Mia Amor Mottley lauds India for providing COVID-19 vaccines <> Barbados
+- Barbados Prime Minister Thanks PM Modi For Supply Of Covid Vaccines <> Barbados
+- “Special friendship” between Barbados and India – NationNews Barbados — nationnews.com <> Barbados
+- Barbados PM thanks PM Modi for supply of made-in-India COVID-19 vaccines <> Barbados
+- Belarus asks Lithuania to extradite opposition leader <> Belarus
+- Is China Cooling On Belarus's Lukashenka? <> Belarus
+- Belarus anti-government protesters receiving medical treatment in Germany <> Belarus
+- Spring showdown looms in Belarus <> Belarus
+- Protests, Prisons, Political Exile: Women At The Forefront Of Resistance In Belarus <> Belarus
+- Picnic time! Belgium begins easing coronavirus restrictions <> Belgium
+- Belgium Rejects Proposal to Suspend Non-Essential Travel Ban - SchengenVisaInfo.com <> Belgium
+- Ireland to Malta, UAE to Belgium — all want Indian nurses, offer better pay and perks <> Belgium
+- Interxion starts construction work on Belgium data centre <> Belgium
+- Belgium makes a U-turn on AstraZeneca jab in over-55s <> Belgium
+- Belize Opens for Yacht Travel <> Belize
+- Belize Joins the International Solar Alliance <> Belize
+- Belize Officials, Police Help Hide Drug Planes <> Belize
+- Belize-Guatemala Joint Commission, “reinvigorated”, to oversee implementation of Placencia Agreements <> Belize
+- Elder dies serving in El Salvador San Salvador West/Belize Mission <> Belize
+- 'They all died on the same day': a Benin doctor on her fight against COVID-19 <> Benin
+- Pakistan Navy ship visits Cotonou Port of Benin <> Benin
+- Excitement as basketball activities set to resume in Benin <> Benin
+- Schools football progress tops Benin agenda <> Benin
+- Fitch Revises Benin's Outlook to Positive; Affirms at 'B' <> Benin
+- The Hamilton Princess Bermuda <> Bermuda
+- Bermuda Announces New Economic Investment Residential Certificate - Finance and Banking - Bermuda <> Bermuda
+- Startling facts about the Bermuda Triangle! <> Bermuda
+- Andersen Global Initiates Expansion Into Bermuda <> Bermuda
+- Football: Bermuda Win Training Camp Opener <> Bermuda
+- Bhutan conspiracy trial to begin this week <> Bhutan
+- Govt okays 12 new SSB battalions to fortify Nepal, Bhutan borders, tri-junction area <> Bhutan
+- MHA allows 12 new SSB battalions to fortify Nepal, Bhutan borders, tri-junction area <> Bhutan
+- एक अकेला इस शहर में | Bhutan | ABP News | Ek Akela Iss Sheher Mein <> Bhutan
+- Bhutan’s most senior SC judge, top Army officer detained in ‘conspiracy’ case <> Bhutan
+- Video of a railing collapse in Bolivia is passed off as from a COVID-19 vaccine centre in Bandra <> Bolivia
+- Bolivia: Probe continues on deaths of 7 students <> Bolivia
+- 7 students die after balcony railing collapses in Bolivia, shocking video goes viral! <> Bolivia
+- Seven Killed And Four Injured After Railing Collapses At Bolivia University <> Bolivia
+- Evo vs. Eva? Ahead of Bolivia regional elections, young candidates are in the spotlight <> Bolivia
+- To Help Migrants in Bosnia and Herzegovina, Tackle EU Abuses <> Bosnia and Herzegovina
+- The growing migrant crisis in Bosnia and Herzegovina <> Bosnia and Herzegovina
+- IMF Executive Board 2020 Article IV Consultation with Bosnia and Herzegovina <> Bosnia and Herzegovina
+- Execution by Bosnia and Herzegovina of the Sejdić and Finci group of ECHR judgments <> Bosnia and Herzegovina
+- Bosnia and Herzegovina inter-agency response to the mixed movement: Monthly situation report, December 2020 - Bosnia and Herzegovina <> Bosnia and Herzegovina
+- A safari lodge experience in Botswana to remember for a lifetime <> Botswana
+- Botswana President Mokgweetsi Masisi to visit Malawi <> Botswana
+- Botswana Eases COVID Restrictions Despite Rising Death Toll <> Botswana
+- Nature: Baboons in Botswana <> Botswana
+- Botswana president tells persons infected with COVID-19 to self-isolate at home <> Botswana
+- Quake info: Strong mag. 5.9 earthquake - Bouvet Island Region on Friday, 28 August 2020 at 02:24 (GMT) <> Bouvet Island
+- Bouvet Island – Bouvet Island <> Bouvet Island
+- Quake info: Moderate mag. 4.9 earthquake - South Atlantic Ocean, Bouvet Island, on 2019-08-21 06:46:50 +00:00 - 1 user experience report <> Bouvet Island
+- Quake info: Strong mag. 5.1 earthquake - Bouvet Island Region on Sunday, 17 November 2019 at 06:18 (GMT) <> Bouvet Island
+- Preparations Resume for 3Y0I Bouvet Island DXpedition <> Bouvet Island
+- Study of aggressive covid-19 strain in Brazil suggests limits of China vaccine <> Brazil
+- Argentina reopens theater, welcomes nightlife as Brazil starts new lockdown <> Brazil
+- World’s Worst Covid Crisis Is Unfolding In Brazil, Where No Fix Seems To Work <> Brazil
+- Black Lives Matter in Brazil: A mother fights for justice for her dead son <> Brazil
+- Covid-19 variant in Brazil overwhelms local hospitals, hits younger patients <> Brazil
+- Quake info: Strong mag. 5.1 earthquake - Indian Ocean, British Indian Ocean Territory, on Friday, 5 Mar 2021 1:13 pm (GMT +5) <> British Indian Ocean Territory
+- Pobjoy Mint — British Indian Ocean Territory: 10-coin series entitled “Queen's Beasts” launches with Lion of England design <> British Indian Ocean Territory
+- Pobjoy Mint — British Indian Ocean Territory: New coins celebrate Queen's 95th birthday <> British Indian Ocean Territory
+- The British Indian Ocean Territory: Clouds on the Horizon for Diego Garcia? – Dr Peter Harris <> British Indian Ocean Territory
+- Very strong mag. 6.1 earthquake - Indian Ocean, British Indian Ocean Territory, 502 km southwest of Hithadhoo, Maldives, on Monday, 31 August 2020 at 17:24 (GMT) - 14 user experience reports <> British Indian Ocean Territory
+- State Secretary Blinken reaffirms US cooperation, partnership with Brunei <> Brunei
+- Brunei announces entering New Normal after local Covid-19 outbreak under control <> Brunei
+- Brunei: Mass gathering up to 1000 allowed under new de-escalation plan <> Brunei
+- India, Brunei hold review meeting, discuss trade, defence and agriculture <> Brunei
+- Brunei extends border closure with Malaysia due to Covid-19 <> Brunei
+- ‘Rowdy’ Indian passenger forces Air France flight to make emergency landing in Bulgaria <> Bulgaria
+- Bulgaria has EU's poorest regions <> Bulgaria
+- Boxing: Deepak Kumar wins silver at Strandja Memorial Tournament in Bulgaria <> Bulgaria
+- Senators Warn U.S.-Bulgarian Relationship Faces 'Serious Challenges' As Sofia Prepares For Elections <> Bulgaria
+- Bulgaria's Sopharma grows 2-mo sales 4% on higher domestic sales <> Bulgaria
+- Managerial Practices and Performance of Small and Medium-sized Enterprises: Evidence from Burkina Faso <> Burkina Faso
+- How Did Extremism and Violence Become a Dangerous Reality in Burkina Faso? - Burkina Faso <> Burkina Faso
+- Burkina Faso and Global Fund Launch New Grants to Accelerate Progress against HIV, TB and Malaria - Burkina Faso <> Burkina Faso
+- Women fleeing Burkina Faso violence face sexual assault <> Burkina Faso
+- ‘Doctors are paying for supplies': inside a stretched Burkina Faso Covid ward <> Burkina Faso
+- Burundi: 2020 Digital Health Factsheet - Burundi <> Burundi
+- Burundi: How sincere is Ndayishimiye’s ‘outstretched hand’ to the media? <> Burundi
+- Burundi: UN refugee agency appeals for over $220 million in 'crucial' support <> Burundi
+- Burundi, Ethiopia leaders vow stronger ties <> Burundi
+- Burundi Regional Refugee Response Plan, January - December 2021 - Burundi <> Burundi
+- Cambodia Aims to Reduce Dependency on US Dollar <> Cambodia
+- Cambodia: Scrap Abusive Covid-19 Prevention Bill <> Cambodia
+- First shipment of Covishield vaccine arrives in Cambodia from India <> Cambodia
+- Cambodia's Royal Turtle lays eggs in captivity for first time <> Cambodia
+- Cambodia to back green-entrepreneur drive <> Cambodia
+- Cameroon Military Accused of Killing Civilians in New Attacks on Separatists <> Cameroon
+- Cameroon to receive more than 1 million vaccine doses: PM <> Cameroon
+- World wildlife day: Cameroon's rich biodiversity face innumerable threats <> Cameroon
+- Cameroon: Survivors of Military Assault Await Justice <> Cameroon
+- Cameroon may face 2nd COVID-19 wave: Health minister aa.com.tr <> Cameroon
+- Confused about where to study? This is how US, UK and Canada stack up for Indian students <> Canada
+- Canadian work permit options for entrepreneurs in 2021 | Canada Immigration News <> Canada
+- Vee Tech, Sona to collaborate with Canada s University Health Network <> Canada
+- Coronavirus prompts some recent newcomers to leave Canada for their home countries <> Canada
+- Top 10 richest people in Canada according to Forbes as of March 7, 2021 <> Canada
+- Venezuela demands from Cape Verde immediate release of diplomat <> Cape Verde
+- Cape Verde’s sea-inspired murals protect aquatic biodiversity <> Cape Verde
+- Turning waste into lamps in Cape Verde <> Cape Verde
+- The Cape Verdean Connection - Editorial | Sandwich Opinion <> Cape Verde
+- Portugal donates 60,000 tests to Cape Verde, Guinea-Bissau and São Tomé and Príncipe <> Cape Verde
+- Cayman Islands grey list tag may hurt FPI investments into India <> Cayman Islands
+- Quake info: Strong mag. 5.2 earthquake - Caribbean Sea, 284 km south of Georgetown, George Town, Cayman Islands, on Sunday, 7 Mar 2021 6:51 am (GMT -6) <> Cayman Islands
+- Joel David Moore, Bob Saget, Jason Jones, Carly Chaikin & Mary Lynn Rajskub To Star In Comedy ‘Blue Iguana’, First In 3-Pic Cayman Islands Deal — EFM <> Cayman Islands
+- Narayana Hrudayalaya gains on expansion in Cayman Islands <> Cayman Islands
+- Narayana Hrudayalaya to invest $100 m more in Cayman Islands <> Cayman Islands
+- Central African Republic: new wave of violence puts education on hold for one in two children across the country <> Central African Republic
+- Thousands flee rebel violence in Central African Republic <> Central African Republic
+- A push for justice in Central African Republic <> Central African Republic
+- Football development highlighted in visit to the Central African Republic <> Central African Republic
+- Democratic Gains in Central African Republic Must Be Preserved by Completing Electoral Process, Peace Operations Chief Tells Security Council - Central African Republic <> Central African Republic
+- Chad: Quick Alerts - 5 March 2021 - Chad <> Chad
+- VMware Tanzu VP And Dell EMC Vet Chad Sakac Takes Hiatus <> Chad
+- Climate change, conflict: What is fuelling the Lake Chad crisis <> Chad
+- Chad: Authorities must investigate raid and killings at presidential contender's house <> Chad
+- FROM THE FIELD: Teaching Chad's scientists of the future <> Chad
+- Chilean and Argentinian wines with a sense of place <> Chile
+- Vaccination is going well in Chile. Why not its neighbours? <> Chile
+- Chile: YE20 Performance <> Chile
+- Chile has ordered enough doses to fully vaccinate its population against Covid twice <> Chile
+- Santiago 2021: Frances Tiafoe vs Nicolas Jarry preview, head-to-head & prediction | Chile Open <> Chile
+- India, China should create ‘enabling conditions’ to settle border dispute, says Wang Yi <> China
+- China exports spike to highest in decades after Covid-19 hit <> China
+- China's Tianwen-1 probe captures stunning images of Mars | See Pictures <> China
+- 'India-China border tensions reflect growing Chinese aggression': Kahl <> China
+- China to operate high-speed bullet trains in Tibet before July: Official <> China
+- Biloela Tamil family sends video message from Christmas Island after federal court ruling – video <> Christmas Island
+- Tamil family spared deportation but remain on Christmas Island <> Christmas Island
+- The Last Family On Christmas Island Spared Deportation <> Christmas Island
+- Midnight Sun Fly Casters Virtual Meeting: Fly Fishing Kiritimati (Christmas Island) <> Christmas Island
+- Killers and rapists set free to roam on Christmas Island <> Christmas Island
+- Cossies Beach, Cocos (Keeling) Islands: Beach expert Brad Farmer names Australia's best beach 2017 <> Cocos (Keeling) Islands
+- Government plans combined tender process for Norfolk and Christmas/Cocos (Keeling) Islands services <> Cocos (Keeling) Islands
+- Colombia Seeks Justice for War Atrocities Via New Court <> Colombia
+- Quotation of the Day: After a Bloody War in Colombia, a Chance to ‘Let the Light In’ <> Colombia
+- Canada announces projects in Colombia to support most vulnerable populations - Colombia <> Colombia
+- New batch of Chinese vaccines arrives in Colombia <> Colombia
+- Second batch of China's Sinovac vaccine arrives in Bogota, Colombia <> Colombia
+- A new beginning for football in Comoros <> Comoros
+- Said Bakari: 'It's magical' to see Comoros on verge of Afcon debut <> Comoros
+- Capacity for Disaster Reduction Initiative (CADRI) - Comoros <> Comoros
+- Comoros Becomes 170th State To Ratify The CTBT | Scoop News <> Comoros
+- FMs of Egypt, Comoros agree to continue coordination to ensure fair access to COVID-19 vaccines in Africa - Politics - Egypt <> Comoros
+- Locals rush in with shovels after mountain made of gold-rich ores found in DR Congo <> Congo
+- DR Congo: International outrage at death sentence of whistleblowers <> Congo
+- Congo bans mining in South Kivu village after gold rush <> Congo
+- Opinion: Another cold case in the Democratic Republic of Congo? <> Congo
+- DR Congo: 1.7 million COVID-19 vaccines arrive via COVAX scheme <> Congo
+- Cook Islands agree to open up travel corridor between Auckland and Rarotonga <> Cook Islands
+- Covid-19: Flights resume to Cook Islands after NZ goes a week without community cases <> Cook Islands
+- Cook Islands 2021 Dengue - Type 2 Outbreak, Situation Report 2 (Latest Updated Data: 12 February 2021) - Cook Islands <> Cook Islands
+- Travel bubble with Cook Islands on way soon <> Cook Islands
+- Cook Islands 2021 Dengue Type-2 (DENV-2) Outbreak, Situation Report (Latest Updated Data: 26 February 2021) - Cook Islands <> Cook Islands
+- Costa Rica marks one year after first confirmed from Covid-19 case <> Costa Rica
+- Sloths in Costa Rica: 11 Little Known Facts - <> Costa Rica
+- Finding Community Among Black Expats in Costa Rica <> Costa Rica
+- Costa Rica carbon neutral: Can China help bring emissions down to zero? <> Costa Rica
+- ‘It's in our DNA’: tiny Costa Rica wants the world to take giant climate step <> Costa Rica
+- Croatia: landmine from 1990s Balkan wars kills asylum seeker <> Croatia
+- Croatia power consumption - Mar 05, 2021 <> Croatia
+- Quake-ravaged part of Croatia sees gaping sinkholes emerge <> Croatia
+- Germany: Police arrest Croatian man wanted for war crimes <> Croatia
+- 'Croatia may get Russian virus vaccine without EU nod' <> Croatia
+- Cuba's struggling entrepreneurs look to Biden with hope <> Cuba
+- Cuba starts final-stage trials of two homegrown Covid vaccines <> Cuba
+- Cuba's vaccine candidates are set to commence Phase III trials this March. <> Cuba
+- Dissident rappers trigger lyrical battle for Cuban hearts and minds <> Cuba
+- Explained: Why Cuba’s economic reforms are significant <> Cuba
+- AP PHOTOS: Cyprus keeps Carnival spirit alive amid COVID-19 <> Cyprus
+- Travel bookings surge as Cyprus and Portugal reopen to UK tourists <> Cyprus
+- Protesters demand withdrawal of Cyprus' 'satanic' Eurovision entry <> Cyprus
+- Covid-19: Cyprus and Portugal want to welcome vaccinated UK tourists from May <> Cyprus
+- EU indecision led Cyprus to allow in UK visitors, says minister <> Cyprus
+- 10 promising startups from the Czech Republic to watch in 2021 <> Czech Republic
+- Czech Republic, Slovakia grapple with coronavirus, political peril <> Czech Republic
+- Czech Republic asks other countries for help with COVID patients <> Czech Republic
+- Czech Republic provides cautionary tale as once-promising COVID-19 situation spirals out of control <> Czech Republic
+- Czech Republic to get China's Sinopharm virus vaccine <> Czech Republic
+- Minks culled over coronavirus in Denmark said to be polluting environment <> Denmark
+- Centre of excellence in dairy sector be set up in collaboration with Denmark <> Denmark
+- Indonesia’s private vaccine scheme, Denmark-Israel plans hit hurdle & other Covid news <> Denmark
+- Rajasthan Governor meets Denmark envoy in Jaipur <> Denmark
+- Denmark to set up centre of excellence for dairy sector in Rajasthan <> Denmark
+- Djibouti second country in the Middle East and North Africa region to receive COVID-19 vaccines through the COVAX Facility - Djibouti <> Djibouti
+- Women and youth's livelihood programs help Djibouti through the COVID-19 crisis <> Djibouti
+- Djibouti lures foreign powers with strategic position <> Djibouti
+- Djibouti: 20 die as smugglers push 80 migrants off boat <> Djibouti
+- Mo Farah opens Olympic season 2021 with win at Djibouti half-marathon <> Djibouti
+- Dominica is Being Transformed One Community at a Time, says MP Ian Douglas <> Dominica
+- Barbados, Dominica get Covishield, Jaishankar says consolidating Carib connect <> Dominica
+- A Look at Prince Harry and Meghan Markle's Latest Dominica Project With Jose Andres <> Dominica
+- Dominica Sets Healthcare Example: Prime Minister Gets Vaccinated, Donates Some to Neighbouring Countries <> Dominica
+- Achieving Climate Resilience with Citizenship by Investment: Dominica to Complete Geothermal Plant by 2022 <> Dominica
+- Dominican Republic Earns Top TripAdvisor Honor <> Dominican Republic
+- Fitch Affirms Dominican Republic's 'BB-' Ratings; Outlook Negative <> Dominican Republic
+- CHC proposes a hemp cultivation pilot program for the Dominican Republic <> Dominican Republic
+- UNESCO convenes meeting of women entrepreneurs in the cultural and creative industries of Cuba and the Dominican Republic <> Dominican Republic
+- Caribbean Situation Report January 2021 - Dominican Republic <> Dominican Republic
+- With COVID-19 close by, East Timor sweats on vaccine delivery <> East Timor
+- East Timor postpones child sex abuse trial of ex-US priest <> East Timor
+- Ex-US priest on trial in East Timor on charges of sex abuse of minors <> East Timor
+- Hillwood Berries, Sharks Football Club teach AFL to East Timor, Tonga pickers <> East Timor
+- Cambodia and East Timor renew trade, investment vows <> East Timor
+- Ecuador sees 1,335 daily cases of Covid-19, caseload tops 291,000 <> Ecuador
+- At Least 62 Killed in Prison Riots in Ecuador <> Ecuador
+- Ecuador sees 286,725 COVID-19 cases, 11,095 deaths <> Ecuador
+- Ecuador’s Yaku Pérez: ‘A triumph even if we don’t get to the second round’ <> Ecuador
+- Ecuador: Protestors Demanding Presidential Vote Recount Clash with Police in Quito, See Pics <> Ecuador
+- Egypt: New Project Will Support Railway Safety and Efforts to Enhance Service Quality <> Egypt
+- Dam discussion deadlock requires coordination, say Egyptian and Sudanese leaders <> Egypt
+- Egypt: Officials say at least 18 killed in road accident outside Cairo <> Egypt
+- Minibus collides with truck in Egypt, 18 dead <> Egypt
+- Egypt's Sisi ups pressure for Ethiopia dam deal on Sudan visit <> Egypt
+- NOC helping to fund El Salvador football team pre-qualifiers training camp <> El Salvador
+- El Salvador’s Election Just Complicated Biden’s Migrant Plan <> El Salvador
+- El Salvador certified as malaria-free by WHO 25 February 2021 <> El Salvador
+- After Two Years of Posturing, El Salvador’s Bukele Must Now Govern <> El Salvador
+- El Salvador's Homicide Rate Hit a Historic Low in 2020 <> El Salvador
+- England may extend rest and rotation policy into Ashes <> England
+- 'Horrendous game': Darren Gough says England were 'not good enough' in 4th Test against India <> England
+- One of England's worst batting series since 1909 <> England
+- England complete 3-0 sweep as New Zealand crumble for 96 <> England
+- Will Patrick Bamford play for England or Ireland? Leeds United star's eligibility explained <> England
+- Equatorial Guinea's largest city Bata rocked by explosions <> Equatorial Guinea
+- Equatorial Guinea : The latest in the Obiang family’s war of succession <> Equatorial Guinea
+- Equatorial Guinea 2018 <> Equatorial Guinea
+- Nigeria, Equatorial Guinea Affirm Energy Cooperation <> Equatorial Guinea
+- China donates 100,000 Covid vaccines to Equatorial Guinea <> Equatorial Guinea
+- Eritrean forces killed hundreds of Ethiopian civilians in Nov in Axum: Report <> Eritrea
+- African Union Shouldn't Endorse Eritrea for UN Rights Body <> Eritrea
+- Ethiopia: Eritrean Forces Massacre Tigray Civilians <> Eritrea
+- Eritrean soldiers killed hundreds of civilians in Tigray: HRW <> Eritrea
+- Eritrea's Isaias Afwerki Is Fueling Bloodshed in Tigray—and Offering Other Regional Leaders Lessons in Authoritarianism <> Eritrea
+- Estonia Restricts Entry for Citizens of 26 Countries Until March 14, Due to COVID-19 - SchengenVisaInfo.com <> Estonia
+- France To Deploy Troops To Estonia Within NATO Contingent For 12 Months – Embassy <> Estonia
+- Estonia sees strong synergies with Telangana: Ambassador <> Estonia
+- Estonia's national final - Eesti Laul 2021 Preview <> Estonia
+- Estonian startup Skycorp going after space industry patent - Baltic Times <> Estonia
+- Guyana, Ethiopia received Made in India Covid-19 Vaccines <> Ethiopia
+- Ethiopia to receive 2.2 million doses of COVID-19 vaccines from COVAX <> Ethiopia
+- Egypt's Sisi ups pressure for Ethiopia dam deal on Sudan visit <> Ethiopia
+- Africa in the news: Ethiopia, Nigeria, and internet control updates <> Ethiopia
+- Ethiopia’s Tigray: UN scraps formal call for peace <> Ethiopia
+- Cruise control – Renagh Holohan on St Patrick’s Day and the Falkland Islands <> Falkland Islands
+- Rockhopper Exploration granted license extension from Falkland Islands Government <> Falkland Islands
+- Falkland Islands green revolution: Wind-turbines to give free energy for electric vehicles <> Falkland Islands
+- Quake info: Moderate mag. 4.6 earthquake - South Atlantic Ocean, 294 km southwest of Stanley, Falkland Islands, on Saturday, 27 Feb 2021 11:16 am (GMT -4) - 1 user experience report <> Falkland Islands
+- An Islander's memories of the 1971 Communications Agreement between the Falkland Islands and Argentina – Penguin News <> Falkland Islands
+- Faroe Islands—an inspirational travel destination <> Faroe Islands
+- In brief: natural gas production in Faroe Islands <> Faroe Islands
+- REinvent Studios’ ‘Trom’ Readies Shoot With Nordic Stars in Faroe Islands (EXCLUSIVE) <> Faroe Islands
+- Norway to Lift Quarantine Requirements for Iceland, Faroe Islands & Some Finnish Territories - SchengenVisaInfo.com <> Faroe Islands
+- Greenland and the Faroe Islands in Security Policy Working Group <> Faroe Islands
+- Man killed in Fiji Islands had dedicated many years to serving Milpitas community <> Fiji Islands
+- 5.6-magnitude quake hits south of the Fiji Islands: USGS - Xinhua | English.news.cn <> Fiji Islands
+- Most Travelers Are Visiting the Fiji Islands for Beaches—And Missing Out on the Rum <> Fiji Islands
+- 6.1-magnitude quake hits south of the Fiji Islands -- USGS - Xinhua | English.news.cn <> Fiji Islands
+- Quake info: Moderate mag. 5.0 earthquake - - south of the Fiji Islands on Saturday, 31 Oct 2020 2:44 pm (GMT +13) - 1 user experience report <> Fiji Islands
+- New data visualization provides creative ways of analyzing the genetic ancestry of Finland <> Finland
+- How Finland's pandemic response is securing new investment opportunities <> Finland
+- Why is Finland so happy? Let's find out. <> Finland
+- Niinistö slams EU vaccine procurements, suggests Finland could consider direct purchases <> Finland
+- Finland declares state of emergency as Covid-19 pandemic intensifies <> Finland
+- France ramps up weekend COVID-19 vaccinations after slow start <> France
+- France extends weekend lockdown to northern region <> France
+- In France, there's no escape from Covid vaccine sceptics. What would Pasteur think? <> France
+- Explained: Why France has admitted to killing an Algerian freedom fighter 6 decades later <> France
+- ‘Rowdy' Indian passenger forces Air France flight to make emergency landing in Bulgaria <> France
+- Have Oil Majors Given Up On French Guiana? <> French Guiana
+- CMA CGM FAK rates from the Mediterranean to French Guiana <> French Guiana
+- French Guiana's Unpatrolled Waters Lure Illegal Fishing Crews <> French Guiana
+- CMA CGM reefer additional from Europe & the Mediterranean to the French West Indies, French Guiana, St Martin & St Barthelemy <> French Guiana
+- You are here - French Guiana, a lush green land in need of protection <> French Guiana
+- COVID-19: French Polynesia islands temporarily shuts for tourism again <> French Polynesia
+- French Polynesia - Telecoms, Mobile and Broadband - Statistics and Analyses <> French Polynesia
+- French Polynesia Health Surveillance Bulletin no. 1 - 2021: 04/01/2021 - 17/01/2021 (Weeks 1 and 2) - French Polynesia (France) <> French Polynesia
+- First Look at the Renovated 5-Star Bora Bora One Private Retreat in French Polynesia <> French Polynesia
+- Tsunami Warning Sends People to High Ground in French Polynesia <> French Polynesia
+- Magnitude 4.9 earthquake strikes near Lambaréné, Moyen-Ogooué, Gabon <> Gabon
+- Gabon: At least 2 die during protest against new covid-19 measures <> Gabon
+- Gabon: Liquidity Risks Due to Challenging Funding Path <> Gabon
+- Al-Sharif Group Holding to expand new projects in Gabon <> Gabon
+- How This Gabon Scientist Found Her Calling: ‘The Manatee Found Me!’ <> Gabon
+- Spotlighting Gambia's roadmap towards enhanced COVID-19 action - Gambia <> Gambia
+- Nigerian Victim Calls for Justice at Gambia Truth Commission <> Gambia
+- Gambia Set to Start Vaccinations After Covax, Senegal Donations <> Gambia
+- 'Gambia's ex-leader involved in migrants' killings' <> Gambia
+- Image . Banjul, The Gambia <> Gambia
+- Texas rapper dead in interstate shooting in Georgia: Police <> Georgia
+- Georgia prosecutor investigating Trump election interference has hired a top racketeering attorney <> Georgia
+- Coronavirus in Georgia | Latest data for March 6, 2021 <> Georgia
+- Georgia Basketball Recap 3/6: Windsor Forest, RTCA fall in playoffs <> Georgia
+- College basketball scores, winners and losers: Georgia Tech on torrid pace entering ACC Tournament <> Georgia
+- Rapid Covid tests sell out in Germany on first day <> Germany
+- Alternative for Germany | The party can't go on <> Germany
+- Germany should have led the world at handling the pandemic. But experts slam Merkel's vaccine response as a disaster <> Germany
+- Fact check: Is Germany throwing away vaccine doses? <> Germany
+- Germany urges new outreach to Moscow <> Germany
+- "Happy Independence Day Ghana 2021": Ghana flag, President independence day messages, wish & fotos celebrating 64 years <> Ghana
+- Ghana use 4th AFCON U-20 trophy celebrate 64th independence <> Ghana
+- Historic COVAX Vaccine Delivery In Ghana Met With Pride — And Skepticism : Goats and Soda <> Ghana
+- Ghana suffers nationwide power outage <> Ghana
+- Andre Ayew: Ghana star happy to take responsibility for Swansea City <> Ghana
+- Gibraltar Open snooker 2021 LIVE - Judd Trump and Jack Lisowski head up exciting finals day action <> Gibraltar
+- Gibraltar closes in on full coronavirus vaccination <> Gibraltar
+- Gibraltar Names Betsy Jensen Chief Human Resources Officer <> Gibraltar
+- Gibraltar Tech buys HCL arm for ₹147 crore <> Gibraltar
+- Gibraltar Minister Appointed Ambassador for International Blockchain Group - CoinDesk <> Gibraltar
+- Restrictions On Domestic And International Air Travel Are Extended In Greece - Greek City Times <> Greece
+- 6.3-magnitude earthquake hits central Greece <> Greece
+- TikTok Brit Complains Living in Greece Makes Her One Year Older <> Greece
+- In Pictures: Twin Tremors Rattle Central Greece Destroying over 900 Houses, Injuring 11 <> Greece
+- 11 Injured, Hundreds of Houses Destroyed by Twin Tremors in Greece <> Greece
+- Greenland Faces Hard Decisions about Rare Earth Mineral Mining <> Greenland
+- How China's Belt and Road and an Australian mining company could be the deciding issues in the Greenland election <> Greenland
+- Preview the natural wonders of Greenland on this virtual tour <> Greenland
+- Greenland's snap election exposes global mineral demand <> Greenland
+- Five Eyes alliance urged to forge ties with Greenland to secure minerals <> Greenland
+- Grenada Independence Day <> Grenada
+- How to Travel to Grenada Right Now <> Grenada
+- Venezuela Donates US$200,000 to Grenada for Purchase of COVID-19 Vaccines - Caribbean News <> Grenada
+- Grenada reopening for tourism in April – NationNews Barbados — nationnews.com <> Grenada
+- How to Make This Grenada Resort Your New Home Office <> Grenada
+- France imposes Covid-19 curfews on islands of Guadeloupe, Reunion <> Guadeloupe
+- PBS special celebrates Black History Month and Carnival in the Guadeloupe Islands <> Guadeloupe
+- Orange Caraibe introduces VoLTE service in Guadeloupe and Martinique <> Guadeloupe
+- My Friend From Guadeloupe And Me: What It Means To Be French <> Guadeloupe
+- Ralf Little spent thousands adopting stray puppy from Guadeloupe <> Guadeloupe
+- Turbidite Announces Development of Turbidite Guam <> Guam
+- Rebuilding the women's workforce and rebuilding Guam go hand in hand <> Guam
+- US Will Fight from Guam and for Guam, US Indo-Pacific Commander Says - Seapower <> Guam
+- US conducts joint Guam drill with Australia, Japan to counter China <> Guam
+- Davidson: Aegis Ashore on Guam Would 'Free Up' 3 Navy Destroyers - USNI News <> Guam
+- Player in Guatemala handed five-year ban for attacking referee <> Guatemala
+- 23-year-old woman fleeing violence in Guatemala is among 13 killed in California crash <> Guatemala
+- Readout of President Joseph R. Biden, Jr. Call with President Alejandro Giammattei Falla of Guatemala <> Guatemala
+- Pacaya Volcano maintains high activity in Guatemala <> Guatemala
+- Guatemala President thanks PM Modi as India donates 2,00,000 doses of COVID-19 vaccine <> Guatemala
+- Covid-19: Guernsey non-essential businesses set to reopen on Monday <> Guernsey
+- Guernsey will not accept cruise ships in 2021 <> Guernsey
+- Deputy suspended from The Guernsey Party over social media comments | ITV News <> Guernsey
+- Covid-19: Guernsey sets indoor gatherings limit at 20 people <> Guernsey
+- Guernsey-Jersey air bridge being considered by both islands' governments | ITV News <> Guernsey
+- 1600 vaccinated in Guinea Ebola virus outbreak but more jabs needed: WHO <> Guinea
+- Equatorial Guinea's largest city Bata rocked by explosions <> Guinea
+- Ebola Kills 13 People In Guinea & Democratic Republic of the Congo <> Guinea
+- Resistance to Guinea Ebola response remains high: Red Cross <> Guinea
+- Batch of Russian Sputnik V vaccine delivered to Guinea - Russian embassy <> Guinea
+- Guinea-Bissau's former PM authorized to leave country for medical treatment <> Guinea-Bissau
+- Guinea-Bissau reports COVID-19 variants first detected in UK, S. Africa - Xinhua | English.news.cn <> Guinea-Bissau
+- Guinea-Bissau's Embaló: Egypt's African role powerfully got back on track, brings to memory former President Nasser <> Guinea-Bissau
+- A new Market Information System may mitigate the impact of the COVID-19 pandemic on farm-gate prices for cashew producers in Guinea-Bissau <> Guinea-Bissau
+- Guinea-Bissau's president hails Egypt's efforts to advance joint African work in phone call with Sisi <> Guinea-Bissau
+- Guyana receives 80,000 doses of Covishield Covid-19 vaccine from India <> Guyana
+- Guyana receives 80,000 doses of Made in India COVID-19 vaccines under Vaccine Maitri <> Guyana
+- Vaccine Maitri: Consignment of covid vaccines airlifted for Guyana, Jamaica, Nicaragua <> Guyana
+- The 'Guyana incident' and lessons for Taiwan's international space <> Guyana
+- Guyana receives donated COVID-19 vaccines from China - Xinhua | English.news.cn <> Guyana
+- Haiti's Protests: Images Reflect Latest Power Struggle <> Haiti
+- Myth or reality: Is Haiti safer today? <> Haiti
+- Talk of a border wall has Haitis attention <> Haiti
+- Haiti's Massive Protests Are a Repudiation of Authoritarianism and US Intervention <> Haiti
+- UN Security Council Expresses Serious Concern About Haiti, Calls for Elections <> Haiti
+- Heard and McDonald Islands – Heard Island and McDonald Islands, Australia <> Heard Island and McDonald Islands
+- Honduras: 2020 Digital Health Factsheet - Honduras <> Honduras
+- "The United States recognizes progress in the fight against drug trafficking in Honduras" <> Honduras
+- In Pictures: Desperation to migrate grows in battered Honduras <> Honduras
+- Honduras: nearly one third of the population face severe hunger - Honduras <> Honduras
+- Honduras: accused mastermind of Berta Cáceres murder to go on trial next month <> Honduras
+- China turns its back on Hong Kong loyalists <> Hong Kong
+- Hong Kong: 4 people fall ill after receiving China's Sinovac vaccine jabs <> Hong Kong
+- Covid-19 fight must be Hong Kong’s top priority, vice-premier tells Lam <> Hong Kong
+- China’s Media Repression Extends to Hong Kong, Report Finds <> Hong Kong
+- Hong Kong's Trusted Independent Judiciary Approaches Its Twilight <> Hong Kong
+- Hungary Now Permits Re-entry Only for Business Travellers Returning From Selected Countries - SchengenVisaInfo.com <> Hungary
+- Hungary tightens pandemic restrictions amid rising deaths <> Hungary
+- Hungary has survived war, isolation and foreign occupation. Can it survive Viktor Orban? <> Hungary
+- Hungary and Poland plan nuclear to replace coal : Energy & Environment <> Hungary
+- Viktor Orban Pulls Hungary's Ruling Party From Conservative E.U. Alliance <> Hungary
+- South-west Iceland is shaking and may be about to erupt <> Iceland
+- Iceland earthquakes spark fears of volcanic eruption <> Iceland
+- Moderate magnitude 4.7 quake hits 31 km south of Reykjavik, Iceland early morning <> Iceland
+- Only Those Vaccinated With COVID-19 Vaccines Approved by EMA or WHO Can Enter Iceland Restriction-Free - SchengenVisaInfo.com <> Iceland
+- The Icelandic Startup Bill Gates Uses to Turn Carbon Dioxide Into Stone <> Iceland
+- Cairn wants India to honour its word and pay $1.4 billion, shareholders to seek enforcement <> India
+- Myanmar asks India to return police who say they fled army <> India
+- India Inc's business confidence highest in decade: FICCI Survey <> India
+- India's first forest healing centre inaugurated in Uttrakand's Ranikhet <> India
+- Liselle, Laura steer SA to 8-wicket win over India in 1st ODI <> India
+- UAE to develop $500 million tourism resort in Indonesia's Aceh <> Indonesia
+- Swiss to Back Indonesia Trade Deal and Ban on Face-Veils <> Indonesia
+- Indonesia reports 5,826 new COVID-19 cases, 112 more deaths <> Indonesia
+- Indonesia Has an Opportunity to Boost Growth <> Indonesia
+- Indonesia’s ban on alcohol could come with its own health risks <> Indonesia
+- Iran ready to take steps when US lifts sanctions: Rouhani <> Iran
+- UK calls on Iran to release dual national after sentence ends <> Iran
+- ‘Bring back nine fishermen jailed in Iran’ <> Iran
+- US flies two B-52 bombers over Iran as Washington-Tehran tensions rise <> Iran
+- India, Iran, Russia to be part of new US push to find settlement in Afghanistan <> Iran
+- Pope calls for peace from ruins of Iraq's war-battered Mosul <> Iraq
+- Pope Francis visits Iraq’s war-ravaged north on last day of tour <> Iraq
+- US will do `what`s necessary` after Iraq rocket attack: Pentagon chief <> Iraq
+- In Iraq, Pope spreads message of peace, religious tolerance and humanity's resilience <> Iraq
+- Pope Francis Closes Out Trip To Iraq <> Iraq
+- Will Patrick Bamford play for England or Ireland? Leeds United star's eligibility explained <> Ireland
+- Holy wells: Mapping Ireland's hidden heritage <> Ireland
+- Bangladesh Emerging Team vs Ireland A game called off after player tests positive for Covid-19 <> Ireland
+- Brexit: Foster calls for dismantling of ‘disastrous’ Northern Ireland Protocol <> Ireland
+- Ireland reaches milestone of half a million Covid vaccinations <> Ireland
+- Covid: Further 71 cases detected on Isle of Man overnight <> Isle of Man
+- Covid: New Isle of Man coronavirus cases rise by 59 <> Isle of Man
+- Covid: Isle of Man schools and nurseries closed in 'firebreak' <> Isle of Man
+- Covid: Isle of Man can 'go about business' after no new cases <> Isle of Man
+- Covid: Man jailed for quarantining at Isle of Man flat with friend <> Isle of Man
+- Israel re-opens restaurants, bars with 40% of country fully vaccinated <> Israel
+- Israel in final phase of easing of lockdown <> Israel
+- Iran's target: An Israeli ship or the nuclear deal? <> Israel
+- Israel Budget Deficit Rises in February Amid Crisis Outlays <> Israel
+- Israel accuses Iran of link to oil spill off its shores <> Israel
+- Italy mulls tighter, nationwide curbs at least at weekends <> Italy
+- Italy reports 307 coronavirus deaths on Saturday, 23,641 new cases <> Italy
+- Italy bans the supply of the AstraZeneca Vaccine to Australia <> Italy
+- Searching For Italy: Stanley Tucci Emerges As Italian Heartthrob On New Travel Series <> Italy
+- Covid-19: Australia asks European Commission to review Italy's vaccine block <> Italy
+- Ivory Coast votes for parliament as Ouattara opponents join forces <> Ivory Coast
+- Ivory Coast opposition parties return for parliamentary election <> Ivory Coast
+- Ghana, Ivory Coast get world’s first COVAX shots, Russia as saviour & other Covid news <> Ivory Coast
+- Ivory Coast gears for crucial parliamentary elections <> Ivory Coast
+- Ivory Coast: the mango sector is waiting anxiously <> Ivory Coast
+- Vaccine Maitri: Consignment of covid vaccines airlifted for Guyana, Jamaica, Nicaragua <> Jamaica
+- Jamaica Now Requires a COVID-19 Test Taken Within 72 Hours for Travelers <> Jamaica
+- Jamaica is finally being held to account for the violence suffered by LGBTQ+ people <> Jamaica
+- Jamaica Begins New Restrictions to Curb Spread of COVID-19 <> Jamaica
+- Jamaica's Bunny Wailer, reggae luminary and last Wailers member, dies at 73 <> Jamaica
+- Japan’s innovators seek their lost mojo <> Japan
+- Report says Japan planning to send armed forces to East China Sea <> Japan
+- Japan may approve second COVID-19 vaccine in May, health minister says <> Japan
+- Japan can embrace change this International Women's Day <> Japan
+- Japan keeps foreign visitor ban to protect against COVID variants <> Japan
+- Islanders' Reverse Retro Jersey Review After Its Debut <> Jersey
+- Cardiologist all the way from New Jersey has his finger on pulse of protesters <> Jersey
+- 'Ambitious' plan for Jersey to lead way in sustainable, ethical finance <> Jersey
+- New Jersey Devils: Ty Smith’s Calder Trophy hype is legit <> Jersey
+- Latest coronavirus updates in New Jersey: Sunday, March 7, 2021 <> Jersey
+- Jordan's PM to Reshuffle Cabinet to Accelerate Reforms <> Jordan
+- Jordan: Father decapitates his two little daughters | Mena – Gulf News <> Jordan
+- Beyond Order by Jordan Peterson review – a ragbag of self-help dictums <> Jordan
+- Michael Jordan Says NBA Rookie Of The Year Favorite LaMelo Ball Has ‘Exceeded Our Expectations’ <> Jordan
+- Not My Job: We Quiz 'Alone' Winner Jordan Jonas On Burning Man <> Jordan
+- Rare Footage: Snow Leopard Family of Three Caught on Camera in Kazakhstan (Video) <> Kazakhstan
+- Fitch Affirms Kazakhstan Utility Systems at 'B+'; Outlook Stable <> Kazakhstan
+- Central Asia’s biggest state Kazakhstan assures to protect freedom of expression <> Kazakhstan
+- Kazakhstan: Exporters lose money to China anti-coronavirus regime <> Kazakhstan
+- Virtual series explores new prospects for boosting UAE-Kazakhstan ties <> Kazakhstan
+- How Kenya's Malindi morphed into 'Little Italy' <> Kenya
+- Kenya Bans Corn Imports Effective Immediately on Health Concerns <> Kenya
+- How Kenya is harnessing the immense heat from the Earth <> Kenya
+- Kenya Receives 1M Vaccine Doses, Will Distribute to Health Workers First <> Kenya
+- Kenya gives land to set up Olympics youth talent center - Xinhua | English.news.cn <> Kenya
+- Kiribati and China to develop former climate-refuge land in Fiji <> Kiribati
+- La Niña 2021 - Anticipatory Action for Food Security & Livelihoods in the Pacific Islands - Kiribati <> Kiribati
+- This Land Was Meant for Kiribati's Climate Refugees. Now It Will Provide the Island Nation With Nutritious Food. <> Kiribati
+- Kiribati: Staff Concluding Statement of the 2021 Article IV Mission <> Kiribati
+- Leading the Way in Kiribati: Akka Rimon <> Kiribati
+- Kuwait's total COVID-19 cases surpass 200,000 <> Kuwait
+- Barmer man gets life threats from Kuwait employer, Indian embassy 'offers' help <> Kuwait
+- Kuwait re-introduces curfew, extends entry ban <> Kuwait
+- Kuwait imposes curfew amid rising COVID-19 cases, Jordan suspends classroom classes <> Kuwait
+- Kuwait: Cemeteries to remain open for burial services <> Kuwait
+- Majlis Podcast: Working To Eradicate Gender Bias In Kyrgyzstan, Uzbekistan <> Kyrgyzstan
+- Kyrgyzstan: Withdraw Problematic Draft Constitution <> Kyrgyzstan
+- 346 patients with coronavirus infection remain in hospitals across Kyrgyzstan <> Kyrgyzstan
+- Kyrgyzstan's Political Turmoil | Manohar Parrikar Institute for Defence Studies and Analyses <> Kyrgyzstan
+- All schools in Kyrgyzstan to resume traditional classes since Apr 1 <> Kyrgyzstan
+- How Laos is overcoming landlockedness and bolstering growth <> Laos
+- BRI projects important milestones of Laos-China cooperation in new era: Lao ambassador_china.org.cn <> Laos
+- Laos Issues New Decree on Dams Aimed at Minimizing Harm <> Laos
+- Over 2,000 people being isolated over COVID-19 concerns in Laos <> Laos
+- Sputnik V authorized in Laos <> Laos
+- If Sputnik V vaccine is recommended for approval by EMA, Latvia will consider purchasing the Russian vaccine - Pavluts <> Latvia
+- Blizzard conditions Sunday in parts of Latvia <> Latvia
+- Latvia and Estonian both want to achieve full energy independence from Russia - Levits <> Latvia
+- Latvia still has much to do in preparing recovery plan for submission to European Commission - Dombrovskis <> Latvia
+- Banks in Latvia report 3.9% reduction of credit portfolio in 2020 <> Latvia
+- Lebanon on Edge as Protests Persist, Caretaker PM Pleads for New Government <> Lebanon
+- Lebanon summons Iranian ambassador over media report on Maronite leader <> Lebanon
+- Lebanon's roads blocked with burning tires over economic, political crisis <> Lebanon
+- Lebanon: Sexual Harassment Law Missing Key Protections <> Lebanon
+- Lebanon Foreign Ministry complains to United Nations over oil spill <> Lebanon
+- Lesotho receives 1st batch of COVID-19 vaccines <> Lesotho
+- Woman slapped with 8-year prison term for stealing baby in Lesotho and fleeing to SA <> Lesotho
+- Vodacom Lesotho on the brink with regulator over $8m fine <> Lesotho
+- Lesotho temporarily bans apple imports <> Lesotho
+- Podcast | Left behind in no man's land: plight of Lesotho's mining families <> Lesotho
+- India opens new mission in Liberia, fourth in this financial year <> Liberia
+- 96000 Doses of COVID-19 Vaccine Arrives in Liberia - Liberia <> Liberia
+- Switzerland: Liberian War Crimes Trial Resumes <> Liberia
+- Guinea Government Confirms New Ebola Outbreak Near Liberian Border <> Liberia
+- Review finds palm oil firm Golden Veroleum cleared carbon-rich Liberian forests <> Liberia
+- Establishing A Business Entity In Liechtenstein (Updated) | International Lawyers Network - JDSupra <> Liechtenstein
+- In brief: foreign bribery laws in Liechtenstein <> Liechtenstein
+- In Liechtenstein, 38,378 of the world's wealthiest people go to the polls <> Liechtenstein
+- Liechtenstein election: Just 23 ballots separate two biggest parties that will now form coalition <> Liechtenstein
+- Reminder - Participation exemption in Liechtenstein - Check need for action now <> Liechtenstein
+- Lithuania Imposes Stricter Rules for Malta and Serbia Travellers Due to COVID-19 - SchengenVisaInfo.com <> Lithuania
+- Lithuania to Belarus: 'Rather watch hell freeze over' than deliver Tsikhanouskaya <> Lithuania
+- Lithuania says it will open trade office in Taiwan, China hits back <> Lithuania
+- Lithuania to open trade office in Taiwan, upsetting China - The Jakarta Post <> Lithuania
+- Lithuania a gateway for Indian firms to expand presence in Europe: Envoy <> Lithuania
+- Luxembourg Now Accepts COVID-19 Test Results in Portuguese, Spanish & Italian Languages - SchengenVisaInfo.com <> Luxembourg
+- Luxembourg is route of choice for FPIs <> Luxembourg
+- Luxembourg: Foreign workers fear potential closing of borders <> Luxembourg
+- Volvo Buses: Luxembourg takes hybrid technology to new levels <> Luxembourg
+- 10 promising Luxembourg-based startups to watch out for in 2021 <> Luxembourg
+- Vice premier meets HKSAR, Macao SAR chief executives - Xinhua | English.news.cn <> Macao
+- Macao's economy contracts 56.3% in 2020: statistics <> Macao
+- Macao's casino stocks surge on news of eased travel restrictions from the mainland <> Macao
+- China fully, faithfully implements policies on Hong Kong, Macao - Xinhua | English.news.cn <> Macao
+- You Can Now (Maybe) Go to Macao Without Quarantining <> Macao
+- India rushes to send rice, HCQ to drought-hit Madagascar <> Madagascar
+- Madagascar President inaugurates advanced digital cobalt therapy machine Bhabhatron-II donated by India <> Madagascar
+- Madagascar Food Security Outlook Update, February to September 2021 - Madagascar <> Madagascar
+- Madagascar opposition protests against pandemic response <> Madagascar
+- Indian envoy calls on Madagascar PM Ntsay to review progress in bilateral ties <> Madagascar
+- Malawi Receives First COVID Vaccine Shipment <> Malawi
+- Malawi receives first batch of coronavirus vaccine <> Malawi
+- Malawi, Congo receive Made-in-India Covid-19 vaccines <> Malawi
+- Human Rights Watch Submission on the Republic of Malawi to the UN Human Rights Committee <> Malawi
+- Botswana President Mokgweetsi Masisi to visit Malawi <> Malawi
+- Malaysia reports 1,683 new COVID-19 cases <> Malaysia
+- Malaysia's AirAsia Group plans air taxi, drone delivery service <> Malaysia
+- Malaysia says detects two cases of new coronavirus variant <> Malaysia
+- Navin’s Peichi explores various facets of Malaysian Tamil life <> Malaysia
+- Covid in Malaysia drives thousands of Thais home <> Malaysia
+- 5 stunning overwater stays in the Maldives <> Maldives
+- Diving breaks in the Maldives <> Maldives
+- India, Maldives sign defence and security-related pacts <> Maldives
+- Maldives Parliament debates defence deal with India <> Maldives
+- The Ritz-Carlton Maldives to open its doors on June 1, 2021 <> Maldives
+- Mali receives first batch of COVID-19 vaccines <> Mali
+- Message of unity, peace and solidarity in Mali visit <> Mali
+- Mali fails to face up to the persistence of slavery <> Mali
+- Mali: UN chief says 'complex attack' against blue helmets may constitute war crime <> Mali
+- Mali, Emirates facilitated Venezuelan gold trade in 2020, opposition says <> Mali
+- Ireland to Malta, UAE to Belgium — all want Indian nurses, offer better pay and perks <> Malta
+- Transport Malta officials halt tombola event attended by some 60 people <> Malta
+- Lithuania Imposes Stricter Rules for Malta and Serbia Travellers Due to COVID-19 - SchengenVisaInfo.com <> Malta
+- Pjazza Pastizzi: the funniest village square in all of Malta <> Malta
+- Malta orders closure of restaurants in raft of new COVID-19 restrictions - Xinhua | English.news.cn <> Malta
+- Leading the Way in Marshall Islands: Hon. Kitlang Kabua <> Marshall Islands
+- Leading the Way in Marshall Islands: Malie Tarbwilin <> Marshall Islands
+- Dengue-3 Outbreak in Republic of the Marshall Islands, June 25, 2019– February 28, 2021 - Situation Report Date: March 3, 2021 - Marshall Islands <> Marshall Islands
+- Xenakoudis: The Republic of the Marshall Islands (RMI) Registry Weathers the Pandemic With Success <> Marshall Islands
+- Marshall Islands leading the region with vaccinating its people <> Marshall Islands
+- Thousands protest in France's Martinique against insecticide 'impunity' <> Martinique
+- Looking back: Students celebrated culture, language in Martinique - Cornell College <> Martinique
+- Thousands protest in Martinique against 'insecticide impunity' in chlordecone case <> Martinique
+- Water pollution: Martinique's coral reef threatened by bacterial infection <> Martinique
+- Orange Caraibe introduces VoLTE service in Guadeloupe and Martinique <> Martinique
+- Positive discussions take place with Mauritanian President <> Mauritania
+- Mauritanian parties propose road map for talks <> Mauritania
+- IMF Executive Board Completes Sixth Review Under the Extended Credit Facility Arrangement with the Islamic Republic of Mauritania, Approves US$23.8 Million Disbursement <> Mauritania
+- Mauritania: 2020 Digital Health Factsheet - Mauritania <> Mauritania
+- Information and consultation meeting on the avian influenza epidemic in Senegal and Mauritania <> Mauritania
+- How India's Military Base On Mauritius' Agalega Island, Shrouded In Secrecy, Is Taking Shape <> Mauritius
+- Mauritius Halts Inbound Flights After Six Local Covid-19 Cases <> Mauritius
+- Covid-19: Mauritius suspends international flights for a week <> Mauritius
+- India signs defence and trade agreements with Mauritius <> Mauritius
+- “Feels like homecoming”: Jaishankar to Indian diaspora in Mauritius <> Mauritius
+- Mayotte abandoned by France during COVID-19 pandemic? <> Mayotte
+- France to send more police to Mayotte amid crime wave, rising Covid-19 cases <> Mayotte
+- Moderate magnitude 4.5 earthquake 49 km east of mamuju, Mayotte <> Mayotte
+- Surging virus reveals inequalities on Mayotte <> Mayotte
+- France to send more police to Mayotte, hit by COVID-19 and ... <> Mayotte
+- Indian tennis: Ankita Raina stuns Sara Errani in qualifiers at Mexico WTA 250 <> Mexico
+- Mexico: Abuses Against Asylum Seekers at US Border <> Mexico
+- Mexico's president defends decision to barricade palace ahead of women's march <> Mexico
+- Infamous tent camp on US-Mexico border drawn down after Biden ends Trump policy <> Mexico
+- Mexico experts recommend approving Bharat Biotech's coronavirus vaccine, Covaxin <> Mexico
+- Moldova Becomes First European Country To Receive COVID-19 Vaccines Under COVAX Scheme <> Moldova
+- Republic of Moldova prepares for COVID-19 vaccine deployment <> Moldova
+- Political foes clash over Moldova registration of Russian vaccine <> Moldova
+- Moldovan President Says Country Should Seize Moment Of 'Unprecedented' EU Support <> Moldova
+- Rabbi in Moldova helps save a life and scores matzah for his community <> Moldova
+- Lagerfeld’s art, furniture collections to be auctioned in Monaco in autumn <> Monaco
+- High Level Visit to IAEA Monaco Laboratories Highlights Nuclear Techniques to Protect People, the Ocean | IAEA <> Monaco
+- Experience Monaco in a day <> Monaco
+- Chanel, Celine, Casablanca... the designer brands taking inspiration from Monaco <> Monaco
+- Lisa Monaco will seek to restore Justice Dept. norms attacked by Trump <> Monaco
+- Xi Jinping pushes for replacing Mongolian with Mandarin in Inner Mongolia amid protests against removing the local language from schools <> Mongolia
+- Rio Tinto set to start negotiations over Mongolian mine <> Mongolia
+- My Mongolian guide: walking with her was a joy <> Mongolia
+- Judo Grand Slam: Japan, Italy and Mongolia take top spots on day 2 in Tashkent <> Mongolia
+- Mongolia Starts Its COVID-19 Vaccinations – The Diplomat <> Mongolia
+- Montenegro receives 30000 doses of China's COVID-19 vaccine <> Montenegro
+- Montenegro quarantines 6 more cities due to COVID-19 <> Montenegro
+- Montenegro receives 1st batch of donated COVID-19 vaccines from China - Xinhua | English.news.cn <> Montenegro
+- Montenegro's January power consumption rises 9% m/m <> Montenegro
+- Lajčák: Montenegro leads in European process <> Montenegro
+- Montserrat launches remote work program <> Montserrat
+- Montserrat's Digital Nomad Visa – Everything You Need To Know <> Montserrat
+- Footballers from the Caribbean island of Montserrat use the training facilities at Stamford AFC's Zeeco Stadium <> Montserrat
+- Montserrat receives critical PPE for frontline workers <> Montserrat
+- Montserrat to Launch a Remote Workers Travel Show - St. Lucia News From The Voice <> Montserrat
+- Morocco/Algeria: Military leaders in the shadows <> Morocco
+- Are Morocco and Algeria on the brink of war? <> Morocco
+- Five reasons behind Morocco’s diplomatic spat with Germany <> Morocco
+- Morocco/Algeria: The armed forces behind the Western Sahara conflict <> Morocco
+- Morocco registers 407 new COVID-19 cases <> Morocco
+- Mozambique – COVID-19 Impact assessment in the central region of Mozambique (Manica, Sofala, Tete and Zambezia) - Round 2 (November 2020) - Mozambique <> Mozambique
+- Mozambique: Presidential Award Ceremony, Virtual Technical Workshops to Drive Growth Across Sectors <> Mozambique
+- 'So much trauma': Mozambique conflict sparks mental health crisis <> Mozambique
+- Mozambique Technical Workshops 2021: Virtual Event <> Mozambique
+- Mozambique: Govt forces, private firms, fighters accused of war crimes <> Mozambique
+- Protests erupt across Myanmar; Suu Kyi party official dies in custody <> Myanmar
+- Support for Myanmar resistance swells in northeast <> Myanmar
+- China will engage with all parties in Myanmar post-military coup: Chinese FM <> Myanmar
+- Myanmar asks India to return police who say they fled army <> Myanmar
+- How women’s clothes became the first line of defence for protesters in Myanmar <> Myanmar
+- Abundant Rain Turns Namibia Green - nasa.gov <> Namibia
+- Steinert implements testing plant in Namibia <> Namibia
+- Weatherwatch: Namibia is full of climate surprises <> Namibia
+- Namibia closes state-owned Air Namibia citing big losses <> Namibia
+- Namibia Holds Interest Rate at 3.75% for Third Straight Meeting <> Namibia
+- 'Finally we are free': Ex-Nauru refugee family released from Darwin hotel room where they were held for a year <> Nauru
+- Man's death years after heart attack on Nauru shows toll of Australia's refugee policies, advocates say <> Nauru
+- New Caledonia Weather Alert | US Embassy in Fiji, Kiribati, Nauru, Tonga, and Tuvalu <> Nauru
+- Prof Pal in Nauru – Call to ensure safety of USP expats <> Nauru
+- The Republic of Nauru Commits to Joining Clean 5G Network <> Nauru
+- Nepal's Parliament holds first meeting after reinstatement by apex court <> Nepal
+- Nepal Police hand over body of Indian man killed in firing in Pilibhit <> Nepal
+- Nepal PM KP Sharma Oli receives first jab of Indian-made COVID-19 vaccine <> Nepal
+- Nepal hands over body of man killed in border firing <> Nepal
+- Nepal to administer second dose of Covid-19 vaccine from April 20 <> Nepal
+- FIH Pro League: Netherlands women, Germany men win <> Netherlands
+- The Netherlands Extends Ban On UK And South Africa Flights <> Netherlands
+- Netherlands extends Covid-19 curfew until 3 March <> Netherlands
+- Netherlands: Explosion near COVID-19 test center <> Netherlands
+- Storm Darcy: Netherlands hit by first snowstorm in a decade, declare 'code red' emergency <> Netherlands
+- Netherlands Antilles Guilder (ANG) Definition <> Netherlands Antilles
+- Netherlands Antilles (Curacao,Sint Maarten and BES Islands): tax treaties <> Netherlands Antilles
+- Netherlands Antilles ceases to exist <> Netherlands Antilles
+- Dissolution of the Netherlands Antilles <> Netherlands Antilles
+- Property in Netherlands Antilles | Dutch Antillean Real Estate Investment <> Netherlands Antilles
+- Covid-free New Caledonia record first cases of coronavirus <> New Caledonia
+- New Caledonia - Tropical Cyclone NIRAN update (Civil Security New Caledonia, GDACS, MeteoFrance Nouvelle Caledonie, media, JTWC) (ECHO Daily Flash of 05 March 2021) - New Caledonia (France) <> New Caledonia
+- Tesla partners with New Caledonia to secure nickel supply | Technology <> New Caledonia
+- Tesla Secures Long-Term Nickel Supply Through New Caledonia Partnership <> New Caledonia
+- The Latest: New Caledonia into lockdown as infections emerge <> New Caledonia
+- Recent Match Report - Australia vs New Zealand 5th T20I 2020/21 <> New Zealand
+- New Zealand: Tsunami waves hit Norfolk Island after powerful quakes. Watch video <> New Zealand
+- India set up WTC final clash with New Zealand <> New Zealand
+- 6.4 Magnitude Quake Hits New Zealand's North Island After Tsunami Alert <> New Zealand
+- Recent Match Report - Australia vs New Zealand 4th T20I 2020/21 <> New Zealand
+- Amid criticism, Nicaragua creates Min of Extraterrestrial Space Affairs <> Nicaragua
+- Vaccine Maitri: Consignment of covid vaccines airlifted for Guyana, Jamaica, Nicaragua <> Nicaragua
+- Exotic fruit companies from Panama and Nicaragua ready for a new challenge <> Nicaragua
+- New Nicaragua law may isolate local banks <> Nicaragua
+- Nicaragua finds boat with bodies of 6 migrants in Caribbean <> Nicaragua
+- Can Niger continue to beat the odds with its democratic progress? <> Niger
+- Niger: Post-election period marred by violence, mass arrests and internet disruption <> Niger
+- Surging violence in Nigeria drives displacement to Niger <> Niger
+- Niger's First Lady, Dr Lalla Malika Issoufou, speaks on COVID-19 impact on women - Niger <> Niger
+- Niger: Mohamed Bazoum elected president, beating Mahamane Ousmane <> Niger
+- Crew of Chinese boat freed after ransom payment: Nigerian army <> Nigeria
+- Nigeria: Leaders get COVID-19 jab to encourage citizens <> Nigeria
+- Fighting Nigeria's Kidnapping Industry <> Nigeria
+- Africa in the news: Ethiopia, Nigeria, and internet control updates <> Nigeria
+- CBN "Naira 4 Dollar Scheme": Central Bank of Nigeria Dollar to Naira new policy explained <> Nigeria
+- Quake info: Major magnitude 6.7 earthquake - South Pacific Ocean, Niue, on Monday, 15 Feb 2021 1:49 pm (GMT -11) - 3 user experience reports <> Niue
+- Niue removed as associate member of Oceania Football <> Niue
+- Niue's OFC membership revoked <> Niue
+- How artist Cora-Allan Wickliffe is reviving the ancient Niuean art of hiapo <> Niue
+- Niueans contemplate changes to their Consitution <> Niue
+- New Zealand: Tsunami waves hit Norfolk Island after powerful quakes. Watch video <> Norfolk Island
+- Norfolk Island in the clear after tsunami <> Norfolk Island
+- Norfolk Island flights: Qantas takes over route from Air New Zealand after bubble bursts <> Norfolk Island
+- Quake info: Minor mag. 3.9 earthquake - South Pacific Ocean, Norfolk Island, on Sunday, 7 Feb 2021 11:26 pm (GMT +11) - 7 user experience reports <> Norfolk Island
+- Two-foot tsunami wave hits Norfolk Island <> Norfolk Island
+- US-South Korea to conduct military drills; North Korea`s reaction feared <> North Korea
+- North Korea imported large amounts gasoline, diesel illicitly last year: Report <> North Korea
+- North Korea’s economic crisis: Last chance for denuclearization? <> North Korea
+- New photos suggest North Korea may be trying to extract plutonium <> North Korea
+- Kim Jong Un urges officials to bring about change North Koreans can appreciate <> North Korea
+- Key Transport Infrastructure in North Macedonia Gets Boost from World Bank, Following Emergency Pandemic Response <> North Macedonia
+- Census sparks a political storm in North Macedonia | BALKAN BLOG <> North Macedonia
+- Judges and public prosecutors in North Macedonia trained on freedom of expression and freedom of the media <> North Macedonia
+- NATO and North Macedonia strengthen responses to cyber threats <> North Macedonia
+- External Oversight Mechanism on Police and Prisons promoted in North Macedonia <> North Macedonia
+- 'Boris Burrow' between Northern Ireland and Great Britain could move a step closer to reality this week - reports <> Northern Ireland
+- Will the old tactics still work for Unionists in Northern Ireland? <> Northern Ireland
+- 'Significant pressure' on post-primary places in Northern Ireland <> Northern Ireland
+- Lauren Wade: Northern Ireland international midfielder hints at joining Glentoran <> Northern Ireland
+- In troubled Northern Ireland <> Northern Ireland
+- Quake info: Strong mag. 5.6 earthquake - North Pacific Ocean, Northern Mariana Islands, on Sunday, 7 Mar 2021 4:51 am (GMT +10) - 1 user experience report <> Northern Mariana Islands
+- Quake info: Light mag. 4.8 earthquake - Philippines Sea, Northern Mariana Islands, on Wednesday, 3 Mar 2021 9:16 pm (GMT +10) <> Northern Mariana Islands
+- Quake info: Unconfirmed quake Mariana Islands and Guam, Northern Mariana Islands, 24 February 2021 23:37 GMT - 14 user experience reports <> Northern Mariana Islands
+- Significant earthquake of magnitude 5.2 just reported 37 km northeast of Pagan Village, Northern Mariana Islands <> Northern Mariana Islands
+- Quake info: Light mag. 4.6 earthquake - North Pacific Ocean, 176 km southeast of Saipan, Northern Mariana Islands, on Tuesday, 2 Mar 2021 10:42 pm (GMT +10) - 1 user experience report <> Northern Mariana Islands
+- Top Banker in Norway Links Latest No. 1 Ranking to Childcare <> Norway
+- UPDATE 1-Norway should prepare for more COVID-19 restrictions, PM says <> Norway
+- Norway will probably tighten COVID-19 restriction further, PM says <> Norway
+- Nordic skiing: Iversen takes 50km gold for Norway after Klaebo disqualified <> Norway
+- 30-year-old woman on trial in Norway provides glimpse of life under IS captivity <> Norway
+- More than half of Oman's population obese: Al Saidi <> Oman
+- 52.7% Israelis vaccinated against Covid-19; Oman to administer 2nd jabs <> Oman
+- Oman: Ministry of Labour warns companies about fake employment records <> Oman
+- COVID-19 in GCC: Oman reports 1059 new cases, 8 deaths <> Oman
+- Oman: Ministry of Labour amends end of service benefits for expats <> Oman
+- Gunmen ambush Pakistan Navy vehicle, killing 1, wounding 2 <> Pakistan
+- Pakistan asks India not to shy away from talks <> Pakistan
+- Pakistan sees surge in COVID-19 cases, tally crosses 5,90,000 <> Pakistan
+- Pakistan: Rail accident kills one, injures several <> Pakistan
+- A Pakistani national became panchayat head in UP. Then she was arrested over ‘land dispute’ <> Pakistan
+- Taiwan-Palau travel bubble on horizon <> Palau
+- Journeys of Discovery: The island of Palau—home of world's first Shark Sanctuary <> Palau
+- Adventist Businessman Inaugurated as President in Palau <> Palau
+- Pamplin Media Group - International evangelist Luis Palau placed in hospice <> Palau
+- WATCH LIVE: Casting Crowns, Mandisa, Andrew Palau and Social Club Misfits Take the Stage at Space Coast City Fest <> Palau
+- Israel, Palestine must avoid unilateral action that could prejudice final status issues: India at U.N. <> Palestine
+- Al-Qudwa says 'no turning back' from Palestine election campaign <> Palestine
+- Old Attack in Iraq Passed Off as Israel Firing at Palestine Mosque <> Palestine
+- The stark inequality of COVID-19 vaccination between Israel and Palestine | MSF <> Palestine
+- Civil Society and the Question of Palestine - NGO Action News – 10 February 2021 - occupied Palestinian territory <> Palestine
+- Panama sees potential to boost exports to China in 2021: official <> Panama
+- Panama, a reliable partner | Daily Sabah <> Panama
+- Miss Panama Allows Transgender Women To Compete In Beauty Pageant <> Panama
+- Panama consul dies in Colombia flooding <> Panama
+- Cooling down a hothouse to launch Panama's strawberry cultivation <> Panama
+- Papua New Guinea hospitals run out of funding as Covid cases surge <> Papua New Guinea
+- Singapore startup seeks to preserve Papua New Guinea biodiversity <> Papua New Guinea
+- Papua New Guinea’s first PM Michael Somare dead <> Papua New Guinea
+- Tribal conflict worsens in Papua New Guinea as firearms rewrite the rules <> Papua New Guinea
+- Papua New Guinea: 2020 Digital Health Factsheet - Papua New Guinea <> Papua New Guinea
+- Paraguay President Upends Cabinet Amid Protests Over Covid <> Paraguay
+- Paraguay : 2020 Article IV Consultation-Press Release; Staff Report; and Statement by the Executive Director for Paraguay <> Paraguay
+- Video: Anger at Coronavirus Response Boils Over in Paraguay <> Paraguay
+- IMF Executive Board Concludes 2020 Article IV Consultation with Paraguay <> Paraguay
+- In Paraguay, a Thorny Struggle Between Land Rights and Conservation <> Paraguay
+- Peru: Vaccination of elders to start on Monday <> Peru
+- Magnitude 4.2 earthquake strikes near Satipo, Provincia de Satipo, Junin, Peru <> Peru
+- Quake info: Light mag. 4.0 earthquake - 38 km southeast of Arequipa, Peru, on Sunday, 7 Mar 2021 9:05 am (GMT -5) <> Peru
+- 'Freedom': Woman in Peru makes history, wins battle over right to die <> Peru
+- Peru's victims of 'forced sterilizations' hope for Fujimori apology <> Peru
+- UPDATE 1-Moderna reaches supply deal with Philippines for 13 mln vaccine doses <> Philippines
+- Moderna reaches supply deal with Philippines for 13 million vaccine doses <> Philippines
+- India-Philippines BrahMos pact: A deal that sends message to China <> Philippines
+- India, Philippines sign key defence pact, set ball rolling for BrahMos missile sale <> Philippines
+- Philippines logs 3,276 new COVID-19 cases, 594,412 in total <> Philippines
+- Police charge Pitcairn man with rape of 11-year-old girl <> Pitcairn
+- Pitcairn man killed in crash off Parkway East <> Pitcairn
+- News briefs: Youth Legion tryouts slated for Monroeville, Pitcairn baseball players <> Pitcairn
+- Pitcairn Police warn of two men pretending to be utility workers <> Pitcairn
+- Pitcairn Way crash: Jamie Field identified as man killed <> Pitcairn
+- Horror bus crash in Poland leaves five dead and 30 seriously injured <> Poland
+- Indian Embassy temporarily suspends consular services in Poland after spike in COVID-19 cases <> Poland
+- Kotigobba 3 team asked to delete scenes shot in Poland over non-payment case; team obliges <> Poland
+- Focus - Poland's mining heartland contemplates a coal-free future <> Poland
+- Hungary and Poland plan nuclear to replace coal : Energy & Environment <> Poland
+- Portugal to quarantine passengers on indirect flights from UK, Brazil <> Portugal
+- Travel bookings surge as Cyprus and Portugal reopen to UK tourists <> Portugal
+- Discover the Coast of Portugal with a Selection of 12 Beach Houses <> Portugal
+- Portugal to Introduce Proposals to Resume Travel Within EU 'as Soon as Possible' - SchengenVisaInfo.com <> Portugal
+- 🇵🇹 Portugal: The Black Mamba win Festival da Canção 2021 <> Portugal
+- AOC-Velázquez Puerto Rico bill sets needed path to decolonization, progressives say <> Puerto Rico
+- Officials seeking answers to Puerto Rico telescope collapse <> Puerto Rico
+- What's behind calls for Puerto Rico statehood? Here are 4 things to know. <> Puerto Rico
+- Democrats fracture over Puerto Rico statehood <> Puerto Rico
+- Puerto Rico statehood a ‘serious issue’ dividing island residents and the Florida diaspora - En Español <> Puerto Rico
+- Federer 'pain free' ahead of Qatar Open, says never eyed retirement <> Qatar
+- Ramkumar Ramanathan qualifies for main draw in Qatar Open <> Qatar
+- Saudi-backed Yemeni government says restores ties with Qatar <> Qatar
+- Qatar up for 2032 Olympics bid despite IOC backing Brisbane <> Qatar
+- Qatar reports 460 new COVID-19 cases, 166,475 in total <> Qatar
+- ‘Friends Reunion’ to start shoot within a month: David Schwimmer <> Reunion
+- Bigg Boss Reunion: Vikas Gupta, Rakhi Sawant make funny faces as they pose with other contestants <> Reunion
+- Watch Rilo Kiley Stage Partial Reunion During ‘Rock-N-Relief’ Livestream <> Reunion
+- Windows 10 could see big changes with Project Reunion <> Reunion
+- Alamo Drafthouse Returns To Middle-Earth With ‘Lord Of The Rings’ Cast Reunion Hosted By Stephen Colbert <> Reunion
+- Romania's president joins choir of politicians demanding explanations after court decision in high-profile case <> Romania
+- Romania reveals the limits of China’s reach in Europe <> Romania
+- Sandhar Technologies announces incorporation of step down subsidiary in Romania <> Romania
+- Seven Arrested for Smuggling Indian Citizens Into Romania - SchengenVisaInfo.com <> Romania
+- Romania to ban Chinese companies from big infrastructure projects <> Romania
+- Human infection with avian influenza A (H5N8) – the Russian Federation <> Russian Federation
+- Avian influenza A(H5N8) infects humans in Russian Federation <> Russian Federation
+- Seven years of illegal occupation of Crimea by the Russian Federation: UK statement <> Russian Federation
+- Russian Federation : 2020 Article IV Consultation-Press Release; Staff Report <> Russian Federation
+- Rospatent included in the top 10 inventions of the Russian Federation the development for protection against bots on the Internet <> Russian Federation
+- Covid-19: Rwanda becomes first African nation to use Pfizer vaccine <> Rwanda
+- Rwanda Begins COVID-19 Vaccinations <> Rwanda
+- Does Arsenal's Visit Rwanda shirtsleeve deal remain a 'compelling fit'? <> Rwanda
+- European Council president witnesses COVID-19 vaccination drive in Rwanda <> Rwanda
+- 'Hotel Rwanda' hero was tricked onto plane and into arrest <> Rwanda
+- Ismail Mohammed: My view on... Saint Helena Island <> Saint Helena
+- Saint Helena | News, Insight, Matches, Players, History <> Saint Helena
+- PPA signed for solar-wind-storage microgrid on Saint Helena <> Saint Helena
+- 75-Acre Estate on South Carolina's Saint Helena Island Scheduled for Luxury Auction® Oct 10th <> Saint Helena
+- Saint Helena is an industrial-themed beach home in Australia’s Byron Bay <> Saint Helena
+- Human Rights Watch Submission to the Universal Periodic Review of Saint Kitts and Nevis <> Saint Kitts and Nevis
+- The Dominican Republic and Saint Kitts and Nevis join TMclass <> Saint Kitts and Nevis
+- 41 cases were confirmed in Saint Kitts and Nevis <> Saint Kitts and Nevis
+- Bangladesh establishes diplomatic ties with Saint Kitts and Nevis <> Saint Kitts and Nevis
+- Socially Responsible Investment at the Heart of CIP Saint Lucia Covid-19 Relief Bond innovation <> Saint Lucia
+- Incredible Things To Do In Saint Lucia, Plus Where To Eat And Stay <> Saint Lucia
+- Saint Lucia celebrates International Women's Day <> Saint Lucia
+- Saint Lucia records 23 new cases of COVID-19; 4883 persons vaccinated <> Saint Lucia
+- Saint Lucia: Dengue Outbreak: DREF Operation Update no. 1 (MDRLC004) - Saint Lucia <> Saint Lucia
+- Saint Pierre and Miquelon – Saint-Pierre, France <> Saint Pierre and Miquelon
+- Travel to Saint Pierre and Miquelon: France in North America <> Saint Pierre and Miquelon
+- Cargo ship disabled, replaced by another to service French Saint Pierre and Miquelon <> Saint Pierre and Miquelon
+- Registration of Sputnik V in Montenegro, Saint Vincent and the Grenadines confirmed <> Saint Vincent and the Grenadines
+- St. Vincent and the Grenadines: Dengue Outbreak - DREF Operation Update no. 1 (MDRVC004) - Saint Vincent and the Grenadines <> Saint Vincent and the Grenadines
+- UN Women: disaster risk resilience in Saint Vincent and the Grenadines <> Saint Vincent and the Grenadines
+- Vaccine Maitri: ‘Made in India’ COVID vaccines arrive in Saint Lucia, Saint Vincent and the Grenadines <> Saint Vincent and the Grenadines
+- Effusive eruption at la Soufrière volcano, St. Vincent - Situation report No. 5 as of 8:00 pm on 9 February, 2021 - Saint Vincent and the Grenadines <> Saint Vincent and the Grenadines
+- Tsunami Watch, Advisory Canceled for Hawaii, American Samoa | The Weather Channel - Articles from The Weather Channel | weather.com <> Samoa
+- $667K boosts prenatal healthcare, telemedicine network for American Samoa | University of Hawaiʻi System News <> Samoa
+- Concerns raised about Green Climate Fund flood defence project in Samoa <> Samoa
+- New Zealand students prototype their own Samoan language app with iPad <> Samoa
+- Samoa start preparation for FIBA U17 Championship <> Samoa
+- Flo Rida features on San Marino’s Eurovision song for 2021 <> San Marino
+- Republic of San Marino: Staff Concluding Statement of an IMF Staff Visit <> San Marino
+- San Marino approves Sputnik V vaccine amid critical supply shortage in Italy <> San Marino
+- INTERVIEW: San Marino goes its own way with vaccine drive <> San Marino
+- San Marino Eurobond Diversifies Funding, Boosts Bank Liquidity <> San Marino
+- WFP Sao Tome and Principe Country Brief, January 2021 - Sao Tome and Principe <> Sao Tome and Principe
+- WFP Sao Tome and Principe Country Brief, December 2020 - Sao Tome and Principe <> Sao Tome and Principe
+- CST extends FTTH to north of Sao Tome and Principe <> Sao Tome and Principe
+- Cancellation for non-use can be used to avoid market monopoly in Sao Tome and Principe <> Sao Tome and Principe
+- Sao Tome and Principe: The African island paradise that time forgot <> Sao Tome and Principe
+- How Saudi Arabia plans to make the kingdom a global hub for green hydrogen <> Saudi Arabia
+- Women are equal stakeholders in Saudi Arabia’s development <> Saudi Arabia
+- Saudi Arabia boosts health checks, 382 new coronavirus cases reported <> Saudi Arabia
+- Saudi Arabia Plays Chicken With U.S. Shale <> Saudi Arabia
+- Saudi Arabia Lifts Most Covid Restrictions <> Saudi Arabia
+- Coronavirus in Scotland: 390 new cases reported across the country <> Scotland
+- Covid: Motorists fined for Essex to Scotland 'TikTok test-drive' <> Scotland
+- Covid in Scotland: Rules around outdoor mixing set to ease next week <> Scotland
+- A look at Scotland's other rapid league wins as Rangers clinch title early <> Scotland
+- Covid Scotland: Jason Leitch on whether Mother's Day visits may be possible on Sunday <> Scotland
+- As protests shake Senegal, women fear sexual assault victims will be silenced <> Senegal
+- Accusations, 'plots' and violence: Political crisis in Senegal <> Senegal
+- Four dead in Senegal unrest after opposition leader held - The Jakarta Post <> Senegal
+- Senegal protests: The country is ‘on the verge of an apocalypse’ <> Senegal
+- Tear gas fired and stones lobbed during protests in Senegal <> Senegal
+- Milivojevic hangs up Serbia boots after being dropped <> Serbia
+- Third batch of China's COVID-19 vaccines arrived in Serbia <> Serbia
+- Dragan Stojkovic takes over as Serbia coach <> Serbia
+- Booming Serbia-China cooperation culminates in joint anti-pandemic fight: president_china.org.cn <> Serbia
+- Serbia donates vaccines and spreads goodwill in the region <> Serbia
+- From Sri Lanka to Seychelles: Destinations that have opened its doors for tourists amid Covid-19 <> Seychelles
+- India now has air bubble agreement with Uzbekistan and Seychelles <> Seychelles
+- Seychelles Soon to Open for the World <> Seychelles
+- Seychelles going quarantine-free; India flights from April 8 <> Seychelles
+- Seychelles bids to reach COVID 'herd immunity' by mid-March <> Seychelles
+- Exim Bank Extends LOC Of USD 15.00 Million To Sierra Leone <> Sierra Leone
+- Chinese ambassador hands over COVID-19 vaccines to Sierra Leonean president - Xinhua | English.news.cn <> Sierra Leone
+- Sierra Leone: 2020 Digital Health Factsheet - Sierra Leone <> Sierra Leone
+- Free agent Kei Kamara on his work in Sierra Leone and the wait for his next club <> Sierra Leone
+- SIERRA LEONE: At-risk youth participate in safe, healthy activities - Sierra Leone <> Sierra Leone
+- Space-Starved Singapore Builds Floating Solar Farms In Climate Fight <> Singapore
+- Nissan Note e-Power Goes On Sale In Singapore With A Host Of Updates <> Singapore
+- Goldman Sachs to hire IT professionals for Singapore hub <> Singapore
+- Dependents of foreigners need to obtain work passes to continue working in Singapore: Ministry <> Singapore
+- Less than 20 per cent of Singaporean women have local female role models: Survey <> Singapore
+- South Africa variant confirmed in Slovakia <> Slovakia
+- Coronavirus digest: Germany accepts COVID patients from Slovakia <> Slovakia
+- COVID-19: Slovakia mired in chaos <> Slovakia
+- Slovakia Approves Sputnik V Vaccine <> Slovakia
+- Slovakia's ruling coalition in crisis over Sputnik V COVID-19 vaccine <> Slovakia
+- Prime Minister Janez Jansa, Slovenia's Marshal Tweeto and the media <> Slovenia
+- Experts tell MEPs of media curbs in Slovenia <> Slovenia
+- Last Week in Slovenia: 26 Feb - 4 March 2021 <> Slovenia
+- Status Revoked: Slovenia's 'Erased' Recall Long Struggle for Justice <> Slovenia
+- Slovenia detects first cases of novel Nigerian variant of COVID-19 <> Slovenia
+- Coral reefs in Solomon Islands hit by bleaching <> Solomon Islands
+- Scientists Observe Widespread Bleaching of Coral Reefs in Solomon Islands | The Weather Channel - Articles from The Weather Channel | weather.com <> Solomon Islands
+- Leading the Way in Solomon Islands: Mary Alalo <> Solomon Islands
+- AIBA President pledges to help planning for Solomon Islands 2023 Pacific Games <> Solomon Islands
+- IMF Staff Concludes Visit to Solomon Islands <> Solomon Islands
+- Somalia Fears New US Airstrike Guidance Is Benefiting al-Shabab <> Somalia
+- India airlifts Covid-19 vaccines to Somalia <> Somalia
+- Car bomb explodes in Somalia's capital, killing at least 20 people <> Somalia
+- Somalia: Government, opposition talks collapse <> Somalia
+- Turkey hands over military barracks to Somalia <> Somalia
+- Lee, Wolvaardt record stand gives South Africa winning start <> South Africa
+- Dean Elgar braces for 'tough' South Africa captaincy tenure <> South Africa
+- South Africa's Jacob Zuma's strategy as he faces corruption inquiry <> South Africa
+- South Africa name Dean Elgar Test captain and Temba Bavuma ODI and T20I captain <> South Africa
+- Sri Lanka aim for consistency against South Africa <> South Africa
+- 5.1-magnitude quake hits 45 km NNE of Visokoi Island, South Georgia and the South Sandwich Islands: USGS - Xinhua | English.news.cn <> South Georgia and the South Sandwich Islands
+- 5.1-magnitude quake hits 205 km NW of Visokoi Island, South Georgia and the South Sandwich Islands -- USGS - Xinhua | English.news.cn <> South Georgia and the South Sandwich Islands
+- South Georgia and the South Sandwich Islands: Ever-popular penguins depicted on new series of 50-pence coins <> South Georgia and the South Sandwich Islands
+- South Georgia and the South Sandwich Islands and the UK <> South Georgia and the South Sandwich Islands
+- 12 facts about South Georgia and the South Sandwich Islands - where you could be the first LGBTI couple to wed <> South Georgia and the South Sandwich Islands
+- South Korea, US scale back military drills over pandemic, Pyongyang diplomacy <> South Korea
+- South Korea and the United States will be scale down <> South Korea
+- South Korea's first transgender soldier dies, spurring calls for change <> South Korea
+- South Korea probing deaths after COVID-19 vaccinations <> South Korea
+- South Korea short track star reportedly bids to skate for China at Beijing Olympics <> South Korea
+- South Sudan's transition from conflict to recovery 'inching forward' – UN envoy <> South Sudan
+- India at UN pushes for peace and stability in conflict-hit South Sudan, Syria <> South Sudan
+- At Least 10 People Killed South Sudan Plane Crash <> South Sudan
+- Women’s Representation in South Sudan State Governments Misses Mandated 35% <> South Sudan
+- Time to Stay the Course in South Sudan <> South Sudan
+- Ex-Catalan leader vows to keep fighting extradition to Spain <> Spain
+- Try this Vegetarian Paella recipe and get a taste of Spain with a healthy twist <> Spain
+- Spain starts culling of 900 cattle after 2 months at sea <> Spain
+- It’s changed for Spain’s farmers <> Spain
+- New protests in Spain over the jailing of rappers backers <> Spain
+- UAE sends more humanitarian assistance to flood-hit Sudanese states - Sudan <> Sudan
+- Dam discussion deadlock requires coordination, say Egyptian and Sudanese leaders <> Sudan
+- Egypt's president el-Sissi visits Sudan amid rapprochement <> Sudan
+- Sudan raises domestic wheat buying price to 13500 pounds per sack <> Sudan
+- US, Russia warships dock in strategic Sudan port <> Sudan
+- Suriname begins coronavirus vaccination campaign with donated doses <> Suriname
+- Suriname signs CARIFORUM-UK EPA <> Suriname
+- Sloth lady of Suriname <> Suriname
+- All eyes on Suriname's 'golden highway' as offshore exploration delivers riches <> Suriname
+- Apache exploration capex 'predominately' for Suriname <> Suriname
+- 5.6-magnitude quake hits 205 km ENE of Olonkinbyen, Svalbard and Jan Mayen -- USGS - Xinhua | English.news.cn <> Svalbard and Jan Mayen
+- Svalbard Satellite Station – Svalbard and Jan Mayen <> Svalbard and Jan Mayen
+- India's Exim Bank has loaned Swaziland $60.30 million with a fresh line of credit worth $10.40 million <> Swaziland
+- Export-Import Bank of India extends a Line of Credit of USD 10.40 million to the Government of the Kingdom of Eswatini (Swaziland) <> Swaziland
+- Swaziland: Govt Extends Coronavirus Lockdown and Prepares for Third Wave to Strike <> Swaziland
+- Rotarians in Northampton launch charity auction to help schools in Swaziland <> Swaziland
+- Times Of Swaziland <> Swaziland
+- Hundreds in Stockholm protest Sweden’s virus restrictions <> Sweden
+- Ibrahimovic poised for Sweden comeback: Reports <> Sweden
+- Man injures 8 with axe in Sweden before being shot, arrested <> Sweden
+- Sweden's capital Stockholm hit by 100% spike in Covid-19 cases in just 3 weeks <> Sweden
+- Sweden PM pitches Gripen fighters in meet with Modi <> Sweden
+- Switzerland referendum: Voters support ban on face coverings in public <> Switzerland
+- Face veil ban 'violates women's rights': Amnesty International Switzerland <> Switzerland
+- Why Switzerland’s Glacier Express Train Should Be On Your Bucket List <> Switzerland
+- The best train rides to take in Switzerland <> Switzerland
+- Switzerland: Face veil ban is discriminatory and violates women's rights <> Switzerland
+- Biden: Strikes in Syria sent warning to Iran to 'be careful' <> Syria
+- Satellite photos show aftermath of strike in northern Syria <> Syria
+- Mine blast in central Syria kills 18 <> Syria
+- Ten grim lessons from a decade of war in Syria <> Syria
+- Syria Kurds hand 12 children to their Iraqi Yazidi mothers <> Syria
+- Fact Check: No, these earthquake destruction scenes are not from Tajikistan <> Tajikistan
+- 6.2 magnitude earthquake hits Tajikistan, know more about the country which lies in active seismic belt <> Tajikistan
+- Moderate 4.3 quake hits near Rasht, Republican Subordination, Tajikistan <> Tajikistan
+- Tajikistan Market Situation Update # 7 (15-19 February 2021) - Tajikistan <> Tajikistan
+- Tajikistan: Facebook bends to tax demands <> Tajikistan
+- Tanzania: Will Magufuli’s U-turn on Covid restore regional faith in the country? <> Tanzania
+- In Tanzania, Survival of Giraffes Is Influenced by How Close They Live To Towns <> Tanzania
+- Benno Ndulu: Tanzania's central banker who left an indelible legacy <> Tanzania
+- WHO Director-General's statement on Tanzania and COVID-19 who.int <> Tanzania
+- Tanzania President Creeps Toward Acknowledging Presence of COVID-19 <> Tanzania
+- Thailand plans to ease quarantine rules for visitors to revive tourism sector: Report <> Thailand
+- Thailand figuring out how to reopen for tourists <> Thailand
+- `Release our friends`: Students protest in Thailand for release of leaders <> Thailand
+- Covid-19: Thailand plans to ease curbs for tourists <> Thailand
+- Leading the Way in Thailand: Phonchan Kraiwatnutsorn <> Thailand
+- Why is Timor-Leste Still Unable to Diversify its Economy? <> Timor-Leste
+- How Timor-Leste Financed Its COVID-19 Efforts <> Timor-Leste
+- Timor-Leste - Food Security Bulletin Edition no. 20 October - December 2020 - Timor-Leste <> Timor-Leste
+- Market Monitor Report: Timor-Leste | Week 5/6 2021 (1st - 14th February) - Timor-Leste <> Timor-Leste
+- UN agencies through KOICA funding commit USD 7.7 million to support implementation of Timor-Leste National Action Plan on Gender-Based Violence - Timor-Leste <> Timor-Leste
+- African Cross Country Championships in Togo postponed due to COVID-19 concerns <> Togo
+- Morocco to help Togo in the launching of its social and economic council <> Togo
+- Togo files for procurement of Russias Sputnik V vaccine, says Russias MFA <> Togo
+- Fashion - A defiant eighth edition of Togo's International Fashion Festival <> Togo
+- Moov Africa Togo plans new subsea cable <> Togo
+- Analysis: NZ review of Tokelau's justice system could complicate decoupling <> Tokelau
+- Artwork put little-known history of Tokelau slavery in front of Porirua people <> Tokelau
+- Life on the eighth meridian: the sea devours home - from Langeneß to Tokelau <> Tokelau
+- 'England vs America': The friendly war that unites a Tokelau atoll <> Tokelau
+- Tokelau officials taking no chances with Covid-19 <> Tokelau
+- Quake info: Strong mag. 5.0 earthquake - South Pacific Ocean, Tonga, on Tuesday, 2 Mar 2021 6:56 am (GMT -12) <> Tonga
+- ADB, New Zealand Celebrate Milestones for Safe, Resilient Power in Tonga <> Tonga
+- Very strong mag. 6.1 earthquake - South Pacific Ocean, Tonga, on Friday, 19 Feb 2021 4:30 am (GMT +13) - 2 user experience reports <> Tonga
+- Quake info: Light mag. 4.7 earthquake - South Pacific Ocean, Tonga, on Monday, 22 Feb 2021 12:19 pm (GMT +13) <> Tonga
+- Quake info: Light mag. 4.6 earthquake - South Pacific Ocean, Tonga, on Saturday, 20 Feb 2021 1:25 pm (GMT +13) <> Tonga
+- Trinidad and Tobago launches green hydrogen initiative - Smart Energy <> Trinidad and Tobago
+- Santana appointed Chef de Mission for Trinidad and Tobago at Tokyo 2020 <> Trinidad and Tobago
+- Lendl Simmons 146 helps Trinidad and Tobago beat Guyana Jaguars to win Super50 Cup - Last Word on Cricket <> Trinidad and Tobago
+- A conversation with Prime Minister of the Republic of Trinidad and Tobago and Chairman of CARICOM Keith Rowley <> Trinidad and Tobago
+- TRI vs BAR, Super50 Cup Dream11 prediction today: Fantasy cricket tips for Trinidad and Tobago vs Barbados <> Trinidad and Tobago
+- Tunisia eases Covid-19 measures in hope to save tourism season <> Tunisia
+- Tunisia's gender violence law struggles to get beyond paper <> Tunisia
+- Tunisia: Thousands protest amid political standoff <> Tunisia
+- Tunisians rally to demand release of activist Rania Amdouni <> Tunisia
+- Tunisia's debt-laden public firms edge toward ruin <> Tunisia
+- Opinion: Is Turkey wooing Pakistan through defence cooperation? <> Turkey
+- Turkey-Iran tensions on rise ahead of possible Sinjar operation | Daily Sabah <> Turkey
+- COVID cases up in Turkey’s 3 biggest cities as east enjoys calm | Daily Sabah <> Turkey
+- Turkey goes zero waste in agriculture | Daily Sabah <> Turkey
+- Heavy rainfall to shower Turkey | Daily Sabah <> Turkey
+- Turkmenistan Ramps Up Controls Over Outside Information <> Turkmenistan
+- 'Turkey, Turkmenistan to boost cooperation' <> Turkmenistan
+- Turkmenistan: The long arm of the police state <> Turkmenistan
+- Indian Army begins training Turkmenistan Special Forces in combat capabilities <> Turkmenistan
+- Turkmenistan receives Chinese-made COVID-19 vaccines <> Turkmenistan
+- Turks and Caicos Islands announces new Minister of Tourism <> Turks and Caicos Islands
+- British Turks and Caicos Islands to hold general elections <> Turks and Caicos Islands
+- Opposition party wins landslide election in Turks and Caicos Islands <> Turks and Caicos Islands
+- US State Department issues travel advisory for Turks and Caicos Islands <> Turks and Caicos Islands
+- PNP Wins Landslide Election in Turks and Caicos Islands <> Turks and Caicos Islands
+- ABS Will Provide High-Speed Connectivity To Tuvalu Pacific Islands – SatNews <> Tuvalu
+- The Bitcoin Bridge looks at the Tuvalu National Digital Ledger with George Siosi Samuels <> Tuvalu
+- Rai adapts Tuvalu school drama | C21Media | News <> Tuvalu
+- Tuvalu passport sales plan under attack <> Tuvalu
+- Tuvalu as Metaphor for Black America <> Tuvalu
+- COVID-19 vaccines arrive in Uganda, Mali <> Uganda
+- 2022™ - News - Okello: Uganda have a good chance of reaching Qatar 2022 - FIFA.com <> Uganda
+- Ghana sink Uganda to win fourth African Under-20 title <> Uganda
+- ‘Beacon of impunity’: US eyes Uganda ties as abuses continue <> Uganda
+- In Uganda, genetically modified mosquitoes bring hope and fear <> Uganda
+- Ukraine calls for Western help to calm frontline escalation <> Ukraine
+- Ukraine-EU border crossings in urgent need of upgrade <> Ukraine
+- Ukraine's international reserves down 1% to $28.5bn in February <> Ukraine
+- Zelenskyy aims to end Ukraine's oligarch era <> Ukraine
+- North Carolina wildlife officials warn against invasive mollusk from Ukraine <> Ukraine
+- United Arab Emirates publishes first photo from Mars probe <> United Arab Emirates
+- United Arab Emirates spacecraft enters orbit around Mars in historic flight <> United Arab Emirates
+- The United Arab Emirates’ green digitization vision <> United Arab Emirates
+- Sending Hope to Mars: CU Boulder, United Arab Emirates team partner on program <> United Arab Emirates
+- Princess Latifa 'hostage' videos shine light on United Arab Emirates' rights record <> United Arab Emirates
+- New coronavirus variant infects 16 in United Kingdom <> United Kingdom
+- What Is The United Kingdom's 'Covid Visa Concession Scheme (CVCS)'? - Immigration - United States <> United Kingdom
+- COVID-19 Travel Restrictions for United Kingdom, Ireland, Schengen Area <> United Kingdom
+- United Kingdom Employers Liability Insurance: The Market Going Forward - ResearchAndMarkets.com <> United Kingdom
+- Ghana and the United Kingdom sign post-Brexit trade deal <> United Kingdom
+- United States Announces $3.5 Million in Assistance to Contain Ebola Outbreaks in The Democratic Republic of the Congo and Guinea <> United States
+- United States: Can theatres afford re-opening with limited capacity? <> United States
+- Going Forward With PERM! - Immigration - United States <> United States
+- United States: This Week in Government Enforcement <> United States
+- Small magnitude 3.0 earthquake 15 miles north of Ukiah, California, United States <> United States
+- United States Minor Outlying Islands - Americafruit <> United States Minor Outlying Islands
+- The 98 Rock – United States Minor Outlying Islands <> United States Minor Outlying Islands
+- Jarvis Ghost Island – United States Minor Outlying Islands <> United States Minor Outlying Islands
+- Uruguay last in South America to start vaccination plan <> Uruguay
+- Uruguay begins vaccination drive against COVID-19 <> Uruguay
+- Nicolás Lodeiro not included in Uruguay’s roster for upcoming World Cup qualifiers <> Uruguay
+- Why Uruguay should be on the radar of all wine lovers <> Uruguay
+- Uruguay prepares to launch COVID-19 vaccination scheme as China jabs arrive <> Uruguay
+- India now has air bubble agreement with Uzbekistan and Seychelles <> Uzbekistan
+- Turkey opens consulate in Uzbekistan's Samarkand <> Uzbekistan
+- Turkish artist to display 'Islamic Cities' photos in Uzbekistan | Daily Sabah <> Uzbekistan
+- Uzbekistan Needs a Navruz for Human Rights <> Uzbekistan
+- India pitches for including Afghanistan, Uzbekistan in INSTC <> Uzbekistan
+- INTERVIEW: The women activists aiming to make history in Vanuatuan politics <> Vanuatu
+- 6 7 magnitude earthquake hits Isangel Vanuatu-ANI <> Vanuatu
+- 7.7 Earthquake Off Vanuatu, New Caledonia Coasts, Tsunami Warning Sounded <> Vanuatu
+- Vanuatu : Technical Assistance Report-Feasibility Study on the Introduction of Quarterly National Accounts <> Vanuatu
+- Strong mag. 6.1 earthquake - Coral Sea, 72 km southwest of Sola, Torba, Vanuatu, on Friday, 5 Mar 2021 3:53 am (GMT +11) - 3 user experience reports <> Vanuatu
+- Venezuela to introduce 1- mn-bolivar bill <> Venezuela
+- Venezuela rations diesel supply to truckers as fuel shortages worsen <> Venezuela
+- Venezuela's Maduro receives first dose of Sputnik V coronavirus vaccine <> Venezuela
+- 3 Venezuelans plead guilty for aiding anti-Maduro plot <> Venezuela
+- Mobile Orchestra Tries to Bring Cheer to Streets of Venezuela's 'Musical City' Amid Pandemic <> Venezuela
+- Malaysian Tenaga unit to buy stake in 5 solar projects in Vietnam <> Vietnam
+- Is Vietnam open to Washington's Indo-Pacific strategy? <> Vietnam
+- ASEAN and the South China Sea: Need for Vietnam’s leadership in the current scenario <> Vietnam
+- Why isn’t Vietnam keen on China-made vaccines? <> Vietnam
+- Where to now for Vietnam after Trong? <> Vietnam
+- Free-flowing Wales shaping up to be unlikely Six Nations champions <> Wales
+- Police name 16-year-old girl killed in south Wales <> Wales
+- Mysterious 23-Foot Sea Creature Washes Ashore In Wales <> Wales
+- News Wales lockdown review: First Minister to outline next steps to easing restrictions this week <> Wales
+- Coronavirus infection rates, cases, and deaths for all parts of Wales on Sunday, March 7 <> Wales
+- First Covid-19 case in Wallis and Futuna <> Wallis and Futuna
+- Wallis and Futuna chiefs worried about Covid-19 <> Wallis and Futuna
+- Second Covid-19 case in Wallis and Futuna <> Wallis and Futuna
+- Wallis and Futuna records third Covid-19 case <> Wallis and Futuna
+- Wallis and Futuna faces new dengue outbreak <> Wallis and Futuna
+- Morocco/Algeria: The armed forces behind the Western Sahara conflict <> Western Sahara
+- Morocco/Algeria: Western Sahara conflict shows signs of escalation <> Western Sahara
+- Western Sahara returns to European Court of Justice <> Western Sahara
+- Jordan opens consulate in Western Sahara <> Western Sahara
+- Western Sahara: EU Parliamentarian Outlines Growing Support for Morocco’s Position <> Western Sahara
+- ‘At least 90 killed in fighting in Yemen’s Marib in 24 hours’ <> Yemen
+- Saudi-led coalition strikes Yemen's rebel-held capital <> Yemen
+- Ending the war in Yemen <> Yemen
+- The hatred and hostility underpinning Yemeni Houthis' political ideology <> Yemen
+- Policeman killed, 7 wounded in Houthi drone attack in Yemen's Taiz <> Yemen
+- IMF Staff Completes Virtual Mission to Zambia <> Zambia
+- Zambia <> Zambia
+- Coronavirus - Zambia: COVID-19 update (6 March 2021) <> Zambia
+- Zambia Launches 2020 Human Development Report - Zambia <> Zambia
+- FROM THE FIELD: The goats helping Zambians to reach economic independence <> Zambia
+- Zimbabwe: Thousands of Villagers Facing Eviction <> Zimbabwe
+- Afghanistan Vs Zimbabwe, Live Streaming: When And Where To Watch the 2nd Cricket Test Match in Abu Dhabi <> Zimbabwe
+- Zimbabwe first in Africa to OK Covaxin <> Zimbabwe
+- Recent Match Report - Afghanistan vs Zimbabwe 1st Test 2020/21 <> Zimbabwe
+- Zimbabwe Police Rearrest 3 Women Opposition Activists <> Zimbabwe
