@@ -1,3 +1,5 @@
+<img src="./assets/ks2labsRheader-03.jpg">
+
 # gpt2reports
 
 These are our reports on the generation using GPT2 models from 🤗  to check for robustness in generation.
@@ -9,7 +11,7 @@ There are several objectives in this benchmark, as we conduct more research into
 ### Words
 
 Tasks which are related to words:
-1. `nth_letter`: The objective is to identify the "n"th letter of each input words and if not available say so
+1. [`nth_letter`](./tests/nth_letter_test.py): The objective is to identify the "n"th letter of each input words and if not available say so
 2. `common first letter output`: From the list of words extract those which start with same letter
 3. `acversarial common first letter output`: Opposite of `common first letter output`
 4. `phrase in word (bool)`: Does a particular phrase exist in the words
