@@ -2,15 +2,11 @@ import os
 import json
 import torch
 import random
-import requests
-from tqdm import trange
 import numpy as np
-from copy import deepcopy
-from multiprocessing import Process
-
+import transformers
+from tqdm import trange
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
-import transformers
 transformers.logging.set_verbosity_error() # suppress tokenizer warnings
 
 # ------ helper functions
@@ -27,8 +23,6 @@ print("Loading Started")
 # load up the model and tokenizer
 model = AutoModelForCausalLM.from_pretrained("gpt2-xl")
 tok = AutoTokenizer.from_pretrained("gpt2-xl")
-# tok.pad_token = tok.eos_token
-# tok.pad_token_id = tok.eos_token_id
 
 # define the device and load model there
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -96,9 +90,9 @@ def run_and_store_result(p, gen_config):
 
 
 def one_complete_config(gen_config, ex_idx_list, ex_size = 10):
-  results = {}
-  print(f"Starting Processing: {ex_size}")
+  # name for this result sheet as well
   name = f"nex={ex_size}_" + "_".join([f"{k}={v}" for k,v in gen_config.items()])
+  results = {} # dict with data
   pbar = trange(len(nth_dataset["samples"]))
   for n in pbar:
     pbar.set_description(f"t={n}_{name}")
@@ -109,7 +103,7 @@ def one_complete_config(gen_config, ex_idx_list, ex_size = 10):
     test_idx = np.array(idx["test"])
     samples = np.array(nth_dataset["samples"][n])
 
-    for qidx in range(3):
+    for qidx in range(N_QUESTIONS):
       prompts = get_sample(
         question = nth_dataset["questions"][n][qidx],
         examples=samples[train_idx],
@@ -124,11 +118,8 @@ def one_complete_config(gen_config, ex_idx_list, ex_size = 10):
 
     results[n] = this_n_res
   
-  # determine the name for this results sheet
-  
   with open(f"./{name}.json", "w") as f:
     f.write(json.dumps(results))
-
 
 if __name__ == "__main__":
   set_seed(4)
@@ -137,23 +128,20 @@ if __name__ == "__main__":
     nth_dataset = json.load(f)
 
   # step 1: load the experiment parameters
-  N_TEST_EXAMPLES = 50
-  tempratures = np.linspace(0.5, 1.0, 10)         # this is in linear space
-  top_k = (np.linspace(1, 40, 6) * 2).astype(int) # this is in linear space
-  num_beams = [1, 4, 8]                           # this is linear space
-  n_examples = [1, 4, 8, 12, 16, 20]              # number of examples to give is in linear space
+  N_TEST_EXAMPLES = 50                # with upto 20 examples and 50 test cases
+  N_QUESTIONS = 1                     # only check for 1st question as that is clear enough
+  num_beams = [1, 5]                  # number of beams for searching
+  tempratures = [0.8, 0.9, 0.95, 1.0] # temprature value
+  top_k = [2, 10, 25, 40]             # top_k value in generation
+  top_p = [0.8, 0.9, 0.95, 0.99]      # top_p value in generation
+  n_examples = [1, 5, 10, 15, 20]     # number of examples for priming
 
-  # just manual experimentation to get top_p
-  top_p = np.log(np.linspace(0.95, 1, 10))**5
-  top_p -= (min(top_p) - 1e-7)
-  top_p /= max(top_p)                              # this is in log space
-
-  # if there is previously stored list of train/test idx load that
+  # step 2: load indices
   if os.path.exists("./ex_idx_list.json"):
+    # there is previously stored list of train/test idx
     print("Loading previously stored version of indices")
     with open("./ex_idx_list.json", "r") as f:
       ex_idx_list = json.load(f)
-
   else:
     # else create a new one
     print("Generating new indices")
@@ -168,22 +156,22 @@ if __name__ == "__main__":
         train_idx = idx[:ex_size]
         test_idx = idx[ex_size: ex_size + N_TEST_EXAMPLES]        
         ex_idx_list[str((n, ex_size))] = {"train": train_idx.tolist(), "test": test_idx.tolist()}
-
     with open("./ex_idx_list.json", "w") as f:
       f.write(json.dumps(ex_idx_list))
 
-  # master loops ---- this program will take days to complete
-  for temp in tempratures:
-    for tk in top_k:
-      for tp in top_p:
-        for nb in num_beams:
-          gen_config={
-            "temperature":float(temp),
-            "top_k":int(tk),
-            "top_p":float(tp),
-            "num_beams":int(nb),
-            "early_stopping":True,
-            "num_return_sequences":10
-          }
-          for ex_size in n_examples:
+  # step 3: master loops ---- this program will take a few days to complete
+  for nb in num_beams:               # 2x
+    for temp in tempratures:         # 4x
+      for tk in top_k:               # 4x
+        for tp in top_p:             # 4x
+          for ex_size in n_examples: # 5x
+            # so total multiplier    = 640x
+            gen_config={
+              "temperature":float(temp),
+              "top_k":int(tk),
+              "top_p":float(tp),
+              "num_beams":int(nb),
+              "early_stopping":True,
+              "num_return_sequences":10
+            }
             one_complete_config(gen_config, ex_idx_list, ex_size)
