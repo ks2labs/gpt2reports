@@ -21,8 +21,9 @@ def set_seed(seed):
 # ----------
 print("Loading Started")
 # load up the model and tokenizer
-model = AutoModelForCausalLM.from_pretrained("gpt2-xl")
-tok = AutoTokenizer.from_pretrained("gpt2-xl")
+model_str = "gpt2"
+model = AutoModelForCausalLM.from_pretrained(model_str)
+tok = AutoTokenizer.from_pretrained(model_str)
 
 # define the device and load model there
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -79,14 +80,20 @@ def get_sample(question, examples, questions):
   return prompts
 
 
-def run_and_store_result(p, gen_config):
+def run_and_store_result(p, q, gen_config):
   corr = 0
   for x in generate(p, 1, **gen_config):
-    qline = x.split("\n")[len(p.split("\n")) - 1]
-    in_, out_ = qline.split("->")[1:]
-    if in_.strip()[0] == out_.strip():
+    pred = x.split("->")[-1].strip()
+    target = q.split("->")[-1].strip()
+    # print("--------")
+    # print("prediction:", pred)
+    # print("PP", x)
+    # print("QQ:", q)
+    # print("target:", target)
+    if pred == target:
       corr += 1
-  return corr/10
+  # exit()
+  return corr/gen_config["num_return_sequences"]
 
 
 def one_complete_config(gen_config, ex_idx_list, ex_size = 10):
@@ -104,16 +111,17 @@ def one_complete_config(gen_config, ex_idx_list, ex_size = 10):
     samples = np.array(nth_dataset["samples"][n])
 
     for qidx in range(N_QUESTIONS):
+      question = nth_dataset["questions"][n][qidx]
       prompts = get_sample(
-        question = nth_dataset["questions"][n][qidx],
+        question=question,
         examples=samples[train_idx],
         questions=samples[test_idx],
       )
 
       # run results for this config
       res = []
-      for p in prompts:
-        res.append(run_and_store_result(p, gen_config))
+      for i,p in enumerate(prompts):
+        res.append(run_and_store_result(p, samples[test_idx][i], gen_config))
       this_n_res.append(res)
 
     results[n] = this_n_res
