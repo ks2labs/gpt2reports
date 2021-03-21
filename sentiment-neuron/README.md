@@ -16,3 +16,10 @@ In this test we recreate the [unsupervised sentiment neuron experiment](https://
 ### M2: GPT-Finetuned Classifier
 
 <img src="./m2.png">
+
+## Artify 
+
+Shitposting to a new level!
+
+<img src="./artify.gif">
+
