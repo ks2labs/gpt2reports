@@ -8,6 +8,12 @@ In this test we recreate the [unsupervised sentiment neuron experiment](https://
 
 ## Results
 
+All Classes are balanced:
+```
+>>> Counter(np.array(amazon_reviews["train"]["stars"]).astype(int))
+Counter({1: 40000, 2: 40000, 3: 40000, 4: 40000, 5: 40000})
+```
+
 ### M1: Full Sequence Classifier (CLIP-text-encoder)
 
 <img src="./m1.png">
