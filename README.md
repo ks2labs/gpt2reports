@@ -2,7 +2,9 @@
 
 # gpt2reports
 
-These are our reports on the generation using GPT2 models from 🤗  to check for robustness in generation.
+These are our reports on the using GPT2:
+- generation using GPT2 models from 🤗  to check for robustness in generation.
+- `sentiment-neuron`: recreating the [unsupervised sentiment neuron experiment](https://openai.com/blog/unsupervised-sentiment-neuron/) from OpenAI
 
 ## Objectives
 
