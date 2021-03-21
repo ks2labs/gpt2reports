@@ -3,3 +3,4 @@ gptgen.py
 __pycache__/
 .ipynb_checkpoints/
 notebooks/WordsTest.ipynb
+_ignore/
