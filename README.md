@@ -8,32 +8,13 @@ Natural Language is a compression system of human knowledge and using that for A
 - [Are NNs Just Fuzzy Hashtables? A Revealing Experiment on MNIST Data](https://medium.com/ontologik/are-nns-just-fuzzy-hashtables-a-revealing-experiment-on-mnist-data-d5b0c773bf40)
 
 These are our reports on the using GPT2:
-- generation using GPT2 models from 🤗  to check for robustness in generation.
+- `letters`: asking GPT to get me `n-th` letter of each word after a few examples.
 - `sentiment-neuron`: recreating the [unsupervised sentiment neuron experiment](https://openai.com/blog/unsupervised-sentiment-neuron/) from OpenAI
 
-## Objectives
+### Sentiment Neuron
 
-There are several objectives in this benchmark, as we conduct more research into the task we will add those here.
+If you take a random matrix and encode the hidden representation from GPT-2 XL model to say 5 clusters we get something like this:
 
+<img src="./assets/artify1.png">
 
-### Words
-
-Tasks which are related to words:
-1. [`nth_letter`](./tests/nth_letter_test.py): The objective is to identify the "n"th letter of each input words and if not available say so
-2. `common first letter output`: From the list of words extract those which start with same letter
-3. `acversarial common first letter output`: Opposite of `common first letter output`
-4. `phrase in word (bool)`: Does a particular phrase exist in the words
-5. `phrase in word (extraction)`: Extract the word that has a particular phrase in the words
-
-### Country
-
-1. `extract`: Extract the name of country in each sentence
-2. `qa`: Is this country present in this sentence
-
-## Metrics
-
-1. Number of examples to give to complete a task
-2. Hardness of a task
-3. (for `extraction`) length of extraction
-4. parameters in the generation function
-5. Structure of prompt: no/short/long prompts
+While it does generate ideas in the same direction they are all part of different clusters.
