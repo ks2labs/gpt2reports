@@ -2,6 +2,8 @@
 
 # gpt2reports
 
+<a href="https://nimblebox.ai/explore/project/gpt2-reports-x-ks2-labs-3607"><img src="https://img.shields.io/badge/NBXplore-Run on Nimblebox.ai-blue"></a>
+
 Natural Language is a compression system of human knowledge and using that for AI is ultimate way we can understand each other. Natural Language Understanding and having an hash-table like GPT-xx are orthogonal to each other, yet I believe like orthogonal vectors, their combination can go a long way. In this repo, we study the behvaiour of GPT-2 models and perform many experiments trying to validate and explore GPT approach in more detail.
 
 Some food for thought:
